@@ -10,26 +10,8 @@
 
  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <style>
-    .mobile-nav {
-      transform: translateX(-100%);
-      transition: transform 0.3s ease-in-out;
-      z-index: 1050;
-    }
-    .mobile-nav.active {
-      transform: translateX(0);
-    }
-    #overlay {
-      display: none;
-      z-index: 1040;
-    }
-    #overlay.active {
-      display: block;
-    }
-    .desktop-nav .nav-link {
-      font-weight: 500;
-    }
-  </style>
+ 
+  <link href="assets/css/custom.css" rel="stylesheet"  crossorigin="anonymous">
 </head>
 <body class="bg-light">
   <!-- Main Navigation -->
@@ -76,27 +58,7 @@
     <a href="#" class="btn btn-primary">Learn More</a>
   </main>
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const closeNav = document.getElementById('close-nav');
-    const mobileNav = document.getElementById('mobile-nav');
-    const overlay = document.getElementById('overlay');
-
-    menuToggle.addEventListener('click', () => {
-      mobileNav.classList.add('active');
-      overlay.classList.add('active');
-    });
-
-    closeNav.addEventListener('click', () => {
-      mobileNav.classList.remove('active');
-      overlay.classList.remove('active');
-    });
-
-    overlay.addEventListener('click', () => {
-      mobileNav.classList.remove('active');
-      overlay.classList.remove('active');
-    });
-  </script>
+  <script src="assets/js/custom.js"   crossorigin="anonymous"></script>
  <script src="assets/js/bootstrap.bundle.min.js"   crossorigin="anonymous"></script>
 
 
