@@ -16,3 +16,11 @@
   .desktop-nav .nav-link {
     font-weight: 500;
   }
+  .custom-font {
+    font-family: 'Roboto', sans-serif;
+  }
+  .navbar-brand-img {
+    width :"50%"; 
+    height : auto ;
+    vertical-align: middle; 
+  }

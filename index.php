@@ -20,13 +20,23 @@
       <button id="menu-toggle" class="btn btn-outline-primary d-lg-none">
         <i class="fas fa-bars"></i>
       </button>
-      <a class="navbar-brand fw-bold" href="#">My Website</a>
+      <a class="navbar-brand fw-bold align-items-center d-flex" href="#">
+        <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ">
+        <span class="text-success fs-3 custom-font" style="line-height: 1;">
+          <div>Care</div>
+          <div>Home</div>
+        </span>
+      </a>
+
+
       <div class="collapse navbar-collapse desktop-nav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Our care</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Our people</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
         </ul>
       </div>
     </div>
