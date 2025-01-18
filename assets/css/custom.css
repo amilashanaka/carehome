@@ -24,3 +24,16 @@
     height : auto ;
     vertical-align: middle; 
   }
+  .h-box{
+    background-color: #c5f7f4;
+    text-align: left; 
+    padding-left: 10%;
+  }
+  .ppl {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .btn-ppl-line{
+    margin-top: -150px;
+  }
+

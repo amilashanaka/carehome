@@ -13,9 +13,9 @@
  
   <link href="assets/css/custom.css" rel="stylesheet"  crossorigin="anonymous">
 </head>
-<body class="bg-light">
+<body class="bg-light ">
   <!-- Main Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold text-success" style="background-color: #e3f2fd" >
     <div class="container-fluid">
       <button id="menu-toggle" class="btn btn-outline-primary d-lg-none">
         <i class="fas fa-bars"></i>
@@ -28,17 +28,31 @@
         </span>
       </a>
 
+      
 
-      <div class="collapse navbar-collapse desktop-nav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Our care</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Our people</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
-        </ul>
-      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">OUR HOMES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">OUR PEOPLE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">NEWS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
     </div>
   </nav>
 
@@ -62,11 +76,15 @@
   <div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
 
   <!-- Main Content -->
-  <main class="container text-center py-5">
-    <h1 class="display-4 fw-bold">Welcome to My Website</h1>
-    <p class="lead text-muted">Your gateway to excellence and innovation.</p>
-    <a href="#" class="btn btn-primary">Learn More</a>
-  </main>
+  <img src= "assets/images/backImg.jpg" class="w-100">
+  <div class="w-100 h-box">
+    <div class="fs-1 text-success">Our People</div>
+    <div class="text-end ">
+      <button type="button" class="btn btn-primary  " >GET IN  TOUCH </button>
+      <button type="button" class="btn btn-primary">DOWNLOAD A BROCHURE</button>
+    </div>
+  </div>
+
 
   <script src="assets/js/custom.js"   crossorigin="anonymous"></script>
  <script src="assets/js/bootstrap.bundle.min.js"   crossorigin="anonymous"></script>
