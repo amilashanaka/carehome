@@ -1,9 +1,7 @@
 :root {
-  --main-color: #c5e1f7;
+  --main-color: #e3f2fd;
   --main-color-select: #a2d1f5;
-  /* --secondary-color: #6c757d;
-  --font-size: 16px;
-  --padding: 10px; */
+  --social-media-strip:rgb(17, 146, 238)
 }
 .mobile-nav {
   transform: translateX(-100%);
@@ -26,10 +24,17 @@
 .custom-font {
   font-family: "Roboto", sans-serif;
 }
+.nav-back-color{
+  background-color:var(--main-color);
+}
 .navbar-brand-img {
   width: "50%";
   height: auto;
   vertical-align: middle;
+}
+.back-imge{
+  height:90%;
+  object-fit: cover; 
 }
 .h-box {
   background-color: var(--main-color);
@@ -43,7 +48,6 @@
 .btn-land {
   background-color: var(--main-color);
   border-color: var(--main-color);
-  border-radius: 0;
   transition: background-color 0.3s, color 0.3s;
   flex: 1 ; 
   height: auto;
@@ -59,4 +63,23 @@
   color: #fff;
   background-color: var(--main-color-select);
   border-color: var(--main-color-select);
+}
+.btn{
+  border-radius: 5px 5px 0 0;
+}
+.back-colr{
+  --main-color: #e3f2fd;
+}
+.hr-prop{
+  border-color:  #e3f2fd;
+   width: 50%;
+}
+.btn-main-div{
+  top: 0; 
+  right: 10%; 
+  transform: translateY(-100%);
+   width: 30%; 
+}
+.media-strip-color{
+  background-color:var(--social-media-strip)
 }
