@@ -1,6 +1,6 @@
 :root {
-  --main-color: #e3f2fd;
-  --main-color-select: #a2d1f5;
+  --main-color1:  rgb(68, 243, 52);
+  --main-color2:  #d331f3;
   --social-media-strip:rgb(17, 146, 238)
 }
 .mobile-nav {
@@ -19,13 +19,13 @@
   display: block;
 }
 .font-color-change:hover {
-  color: #d331f3 !important;
+  color: var(--main-color2) !important;
 }
 .site-main-name-font{
-  color: rgb(68, 243, 52);
+  color:var(--main-color);
 }
 .site-sub-name-font{
-  color: #d331f3;
+  color:var(--main-color2);
 }
 .sub-menu{
   background-color: #efcaf7;
@@ -37,8 +37,26 @@
   font-family: "Roboto", sans-serif;
 }
 .media-strip-color{
-  background-color: rgb(68, 245, 61)
+  background-color: var(--main-color1);
 }
 .f-bottom{
-  background-color:  #d331f3;
+  background-color: var(--main-color2);
+}
+
+.custom-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.custom-highlight {
+  color:var(--main-color1);
+}
+.custom-btn {
+  background-color:var(--main-color1);
+  border: none;
+  color: white;
+  border-radius: 30px; /* Rounded edges */
+  padding: 10px 20px;
+}
+.custom-btn:hover {
+  background-color:var(--main-color1);
 }
