@@ -11,11 +11,12 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <link href="assets/css/custom.css" rel="stylesheet" crossorigin="anonymous">
+  
 </head>
 
 <body class="bg-light ">
   <!-- Main Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold text-success nav-back-color" >
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold text-success" style="color:#ff5722 ;">
     <div class="container-fluid">
       <button id="menu-toggle" class="btn btn-outline-primary d-lg-none ">
         <i class="fas fa-bars"></i>
@@ -23,26 +24,26 @@
       <a class="navbar-brand fw-bold align-items-center d-flex" href="#">
         <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ps-5">
         <span class="text-success fs-3 custom-font lh-1" >
-          <div>Care</div>
-          <div>Home</div>
+          <div class="fs-1 site-main-name-font">NEW BEGINNINGS</div>
+          <div class="fs-2 text-center site-sub-name-font">BRISTOL LIMITED</div>
         </span>
       </a>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#" id="home">HOME</a>
+            <a class="nav-link font-color-change" href="#" id="home">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="aboutUs">ABOUT US</a>
+            <a class="nav-link font-color-change" href="#" id="aboutUs">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">OUR HOMES</a>
+            <a class="nav-link font-color-change" href="#">OUR HOMES</a>
           </li>
 
           <!-- Dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="careDropdown" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle font-color-change" href="#" id="careDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               OUR CARE
             </a>
@@ -57,7 +58,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="pplDropdown" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle font-color-change" href="#" id="pplDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               OUR PEOPLE
             </a>
@@ -70,10 +71,10 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">NEWS</a>
+            <a class="nav-link font-color-change" href="#">NEWS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
+            <a class="nav-link font-color-change" href="#">CONTACT US</a>
           </li>
         </ul>
       </div>
@@ -100,7 +101,7 @@
   <div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
 
   <!-- Main Content -->
-   <main id="mainContent">
+   <main >
    
   </main>
    <!-- Footer Top -->
