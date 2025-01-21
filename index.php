@@ -105,7 +105,7 @@
    
   </main>
    <!-- Footer Top -->
-  <footer class="bg-secondary text-white" >
+  <footer class=" text-white f-bottom" >
     <div class="fs-2 text-white" style="background-color:#e3f2fd">
       <div class="d-flex align-items-center justify-content-center py-3 media-strip-color" >
       <p class="mb-0 me-5">FOLLOW US FOR REGULAR UPDATES</p>

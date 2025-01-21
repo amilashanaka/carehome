@@ -34,5 +34,8 @@
   font-family: "Roboto", sans-serif;
 }
 .media-strip-color{
-  background-color:var(--social-media-strip)
+  background-color: rgb(68, 245, 61)
+}
+.f-bottom{
+  background-color:  #d331f3;
 }
