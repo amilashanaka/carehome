@@ -40,35 +40,26 @@
           <li class="nav-item">
             <a class="nav-link font-color-change" href="#">OUR HOMES</a>
           </li>
-
-          <!-- Dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle font-color-change" href="#" id="careDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              OUR CARE
-            </a>
-            <div class="dropdown-menu dropdown-menu-end " aria-labelledby="careDropdown" >
-              <div class="d-flex ">
-                <div><a class="dropdown-item" href="#">NURSING CARE</a></div>
-                <div><a class="dropdown-item" href="#">DEMENTIA CARE</a></div>
-                <div><a class="dropdown-item" href="#">RESIDENTIAL CARE</a></div>
-                <div><a class="dropdown-item" href="#">RESPITE CARE</a></div>
-              </div>
-                
-          </li>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          OUR CARE
+          </a>
+          <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">NURSING CARE</a></li>
+            <li><a class="dropdown-item" href="#">DEMENTIA CARE</a></li>
+            <li><a class="dropdown-item" href="#">RESIDENTIAL CARE</a></li>
+            <li><a class="dropdown-item" href="#">RESPITE CARE</a></li>
+          </ul>
+        </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle font-color-change" href="#" id="pplDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              OUR PEOPLE
-            </a>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="pplDropdown" >
-              <div class="d-flex ">
-                <div><a class="dropdown-item " href="#" >CAREERS</a></div>
-              </div>
-                
-            </div>
-          </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         OUR PEOPLE
+          </a>
+          <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">CAREERS</a></li>
+          </ul>
+        </li>
 
           <li class="nav-item">
             <a class="nav-link font-color-change" href="#">NEWS</a>
