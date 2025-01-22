@@ -1,6 +1,6 @@
 :root {
-  --main-color1:  rgb(68, 243, 52);
-  --main-color2:  #d331f3;
+  --main-color1: #78be20;
+  --main-color2:  #6d358f;;
   --social-media-strip:rgb(17, 146, 238)
 }
 .mobile-nav {
@@ -18,17 +18,30 @@
 #overlay.active {
   display: block;
 }
+.image-overlay {
+  width: 150px; 
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(53%) sepia(69%) saturate(543%) hue-rotate(89deg) brightness(92%) contrast(97%);
+}
+.navbar-brand-img {
+  width:120px;
+  height: auto;
+  padding-right: 10px;
+}
 .font-color-change:hover {
   color: var(--main-color2) !important;
 }
 .site-main-name-font{
   color:var(--main-color1);
 }
-.site-sub-name-font{
+.site-sub-name-color{
   color:var(--main-color2);
 }
 .sub-menu{
   background-color: #efcaf7;
+}
+hor-color{
+  background-color: var(--main-color1);
 }
 .desktop-nav .nav-link {
   font-weight: 500;
@@ -36,13 +49,12 @@
 .custom-font {
   font-family: "Roboto", sans-serif;
 }
-.media-strip-color{
+.main-bg-color{
   background-color: var(--main-color1);
 }
-.f-bottom{
+.sub-bg-color{
   background-color: var(--main-color2);
 }
-
 .custom-title {
   font-size: 3rem;
   font-weight: bold;
@@ -60,3 +72,48 @@
 .custom-btn:hover {
   background-color:var(--main-color1);
 }
+/* Our care cards*/
+.custom-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.custom-highlight {
+  color: var(--main-color1);
+}
+.footer-brand-img {
+  width:150px;
+  height: auto;
+  padding-right: 10px;
+}
+.feature-card {
+  background-color: var(--main-color2);
+  color: white;
+  border-radius: 15px; 
+  padding: 20px;
+  text-align: center;
+  height: 100%; 
+  justify-content: space-between; 
+  flex-direction: column;
+}
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+}
+.feature-icon img {
+  width: 40px;
+  height: 40px;
+}
+.custom-btn {
+  background-color:var(--main-color1);
+  border: none;
+  color: white;
+  border-radius: 5PX;
+  padding: 10px 20px;
+}
+
