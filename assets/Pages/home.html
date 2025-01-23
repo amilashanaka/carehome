@@ -1,16 +1,51 @@
 <div>
+  <!-- slider start -->
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active"data-bs-interval="5000">
-      <img src="assets/images/1.jpg" class="d-block w-100 " alt="...">
+    <!-- First Slide -->
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="assets/images/1.jpg" class="d-block w-100" alt="...">
+      <div class="gradient-overlay"></div>
+      <div class="position-absolute p-1 " style="z-index: 10; top: 10%; left: 7%; color: rgb(7, 248, 67);">
+        <h2 class="fw-bold text-shadow">A Fresh Start, A Caring Heart</h1>
+        <p class="fs-4 fst-italic text-white text-shadow">
+          "At New Beginnings Care Home, <br>
+          Every day is a chance<br> to embrace comfort, nurture joy,<br>
+          and create a brighter tomorrow...<br>
+          Because everyone deserves <br>a fresh start<br>
+          filled with care and compassion."
+        </p>
+      </div>
     </div>
+
+    <!-- Second Slide -->
     <div class="carousel-item" data-bs-interval="5000">
-      <img src="assets/images/2.jpg" class="d-block w-100 " alt="...">
+      <img src="assets/images/2.jpg" class="d-block w-100" alt="...">
+      <div class="gradient-overlay"></div>
+      <div class="position-absolute p-3 " style="z-index: 10; top: 4%; left: 4%;  color: rgb(7, 248, 67);">
+        <h2 class="fw-bold text-shadow">Caring for You, Every Step of the Way</h2>
+        <p class="fs-4 fst-italic text-white text-shadow">
+          "Our team is dedicated to making<br> every day special
+          with warmth,<br> compassion, and care."
+        </p>
+      </div>
     </div>
+
+    <!-- Third Slide -->
     <div class="carousel-item" data-bs-interval="5000">
       <img src="assets/images/3.jpg" class="d-block w-100" alt="...">
+      <div class="gradient-overlay"></div>
+      <div class="position-absolute p-3 " style="z-index: 10; top: 6%; left: 5%;  color: rgb(7, 248, 67);">
+        <h2 class="fw-bold text-shadow">Your Comfort, Our Commitment</h2>
+        <p class="fs-4 fst-italic text-white text-shadow">
+          "New Beginnings Care Home <br>provides a welcoming<br>
+          environment for you <br>to thrive and enjoy life."
+        </p>
+      </div>
     </div>
   </div>
+
+  <!-- Controls -->
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -20,19 +55,34 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+ <!-- slider end -->
+<!-- welcome section start-->
+<section class="container py-5">
+  <div class="row align-items-center">
+    <!-- Text Content -->
+    <div class="col-lg-6">
+      <h1 class="custom-title">Welcome to <span class="custom-highlight">NB Care</span></h1>
+      <p class="lead">New Beginnings Bristol Ltd is a friendly support agency offering support to Mental health issues.
+        Our aim is to help people be as independent as possible; offering support, practical advice on social events to build confidence and achieve goals.
+        We provide dedicated one to one support promoting independence whilst 
+        supporting in their own homes with all aspects of daily living, building their confidence to get involved with their local community around them.
+       We offer a range of support services, including a monthly Disco that gives people the chance to meet 
+       their friends and enjoy the social atmosphere with a drink in a welcoming environment. Please give us a call if you’d like more information.</p>
+      <a href="#" class="btn custom-btn btn-lg">About Us</a>
+      <p class="mt-3"><strong>Need clinical advice?</strong><br><span class="fs-4 green-highlight">0800 123 45 678</span></p>
+    </div>
+    
+    <!-- Image -->
+    <div class="col-lg-6">
+      <div class="position-relative">
+        <img src="assets/images/welcome.jpg" class="img-fluid " alt="welcome image">
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="container text-center py-5">
-  <h1 class="custom-title">
-    Welcome to <span class="custom-highlight">New Beginnings Bristol Ltd</span>
-  </h1>
-  <p class="text-muted mt-4 fs-4">
-    New Beginnings Bristol Ltd is a friendly support agency offering support to Mental health issues. Our aim is to help people be as independent as possible; offering support, practical advice on social events to build confidence and achieve goals. We provide dedicated one to one support promoting independence whilst supporting in their own homes with all aspects of daily living, building their confidence to get involved with their local community around them.
-
-    We offer a range of support services, including a monthly Disco that gives people the chance to meet their friends and enjoy the social atmosphere with a drink in a welcoming environment. Please give us a call if you’d like more information.
-  </p>
-  <button class="custom-btn mt-4">ABOUT US</button>
-</div>
-<hr class="w-100 hor-color">
+<!-- welcome section  end-->
+<!-- <hr class="w-100 main-back-color"> -->
 
 <!-- Our care cards start -->
 <section class="py-5">
@@ -41,54 +91,54 @@
       We Offer You The <span class="custom-highlight">Best support</span>
     </h2>
     <div class="d-flex align-items-stretch">
-    <div class="row mt-5 d-flex align-items-stretch g-4">
-      <!-- Card 1 -->
-      <div class="col-md-3 ">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <img src="assets/images/nursing.png" alt="Home Care">
-          </div>
-          <h4>Nursing</h4>
-          <p class="fs-5">Peace of mind that expert, professional nursing care is always available to meet the health care needs of your loved one.</p>
-          <a href="#" class="btn custom-btn mt-auto">FIND OUT MORE</a>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-md-3 d-flex align-items-stretch">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <img src="assets/images/nursing.png" alt="Home Care">
-          </div>
-          <h4>Dementia</h4>
-          <p class="fs-5">NEW BEGINNINGS’s expertise helps individuals living with dementia to lead happy, fulfilled and meaningful lives.</p>
-          <a href="#" class="btn custom-btn mt-auto">FIND OUT MORE</a>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-md-3">
-        <div class="feature-card d-flex flex-column h-100">
-          <div class="feature-icon">
-            <img src="assets/images/nursing.png" alt="Home Care">
-          </div>
-          <h4>Residential</h4>
-          <p class="fs-5">Every resident needs to feel safe, supported, understood and cherished. We call it ‘person-centric’ care.</p>
-          <div class="mt-auto"><a href="#" class="btn custom-btn mt-auto">FIND OUT MORE</a>
+      <div class="row mt-5 d-flex align-items-stretch g-4">
+        <!-- Card 1 -->
+        <div class="col-md-3">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="assets/images/c1.png" alt="Home Care">
+            </div>
+            <h4 class="mt-3">Nursing</h4>
+            <p class="fs-5">Peace of mind that expert, professional nursing care is always available to meet the health care needs of your loved one.</p>
+            <a href="#" class="btn custom-btn mt-auto">FIND OUT MORE</a>
           </div>
         </div>
-      </div>
-      <!-- card 4 -->
-      <div class="col-md-3">
-        <div class="feature-card d-flex flex-column h-100">
-          <div class="feature-icon">
-            <img src="assets/images/nursing.png" alt="Home Care">
+        <!-- Card 2 -->
+        <div class="col-md-3">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="assets/images/c2.png" alt="Home Care">
+            </div>
+            <h4 class="mt-3">Dementia</h4>
+            <p class="fs-5">NEW BEGINNINGS’s expertise helps individuals living with dementia to lead happy, fulfilled and meaningful lives.</p>
+            <a href="#" class="btn custom-btn mt-auto">FIND OUT MORE</a>
           </div>
-          <h4>Respite</h4>
-          <p class="fs-5">Discover the difference a short stay can make – just the tonic, for loved ones and their primary carers.</p>
-          <div class="mt-auto"><a href="#" class="btn custom-btn mt-auto">FIND OUT MORE</a>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-3">
+          <div class="feature-card d-flex flex-column h-100">
+            <div class="feature-icon">
+              <img src="assets/images/c3.png" alt="Home Care">
+            </div>
+            <h4 class="mt-3">Residential</h4>
+            <p class="fs-5 ">Every resident needs to feel safe, supported, understood and cherished. We call it ‘person-centric’ care.</p>
+            <div class="mt-auto"><a href="#" class="btn custom-btn mt-auto">FIND OUT MORE</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-3">
+          <div class="feature-card d-flex flex-column h-100">
+            <div class="feature-icon">
+              <img src="assets/images/c4.png" alt="Home Care">
+            </div>
+            <h4 class="mt-3">Respite</h4>
+            <p class="fs-5">Discover the difference a short stay can make – just the tonic, for loved ones and their primary carers.</p>
+            <div class="mt-auto"><a href="#" class="btn custom-btn mt-auto">FIND OUT MORE</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </div>
 </section>
@@ -100,7 +150,8 @@
       <div class="row g-5">
           <div class="col-lg-7">
               <div class="section-title position-relative pb-3 mb-2">
-                  <h1 class="mb-0 custom-highlight">Our People</h1>
+                <h2 class="custom-heading">
+                  Our <span class="custom-highlight">People</span>
               </div>
               <p class="mb-4 fs-4" >Our people – caring for the people that matter most in the world to you – really set NEW BEGINNINGS apart.
 
@@ -136,11 +187,12 @@
     <!-- Events cars grid -->
     <div class="row mt-5" >
       <!-- Card 1 -->
-      <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="assets/images/e1.jpg" class="card-img-top rounded-3" alt="Medical Record">
-        </div>
-      </div>
+     <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+  <div class="card h-100 shadow-sm animate__animated animate__fadeInUp">
+    <img src="assets/images/e1.jpg" class="card-img-top rounded-3" alt="Medical Record">
+  </div>
+</div>
+
       
       <!-- Card 2 -->
       <div class="col-lg-4 col-md-4 col-sm-6 mb-4">

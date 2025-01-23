@@ -24,7 +24,7 @@
   filter: brightness(0) saturate(100%) invert(53%) sepia(69%) saturate(543%) hue-rotate(89deg) brightness(92%) contrast(97%);
 }
 .navbar-brand-img {
-  width:120px;
+  width:80px;
   height: auto;
   padding-right: 10px;
 }
@@ -40,7 +40,7 @@
 .sub-menu{
   background-color: #efcaf7;
 }
-hor-color{
+main-back-color{
   background-color: var(--main-color1);
 }
 .desktop-nav .nav-link {
@@ -55,6 +55,37 @@ hor-color{
 .sub-bg-color{
   background-color: var(--main-color2);
 }
+.text-shadow {
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
+}
+/* Welcome section */
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
+  opacity: 0.8;
+}
+.welcome-section {
+  background-size: cover;
+  background-position: center;
+  /* padding: 10px 50px; */
+  position: relative;
+}
+
+.welcome-content {
+  max-width: 300px;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color:var(--main-color1);
+  margin-bottom: 15px;
+}
+
 .custom-title {
   font-size: 3rem;
   font-weight: bold;
@@ -86,14 +117,20 @@ hor-color{
   padding-right: 10px;
 }
 .feature-card {
-  background-color: var(--main-color2);
-  color: white;
+  background-color: white;
+  color:rgba(0, 0, 0, 0.747);
+  border: 2px solid var(--main-color2);
   border-radius: 15px; 
   padding: 20px;
   text-align: center;
   height: 100%; 
   justify-content: space-between; 
   flex-direction: column;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .feature-icon {
   width: 60px;
@@ -116,4 +153,52 @@ hor-color{
   border-radius: 5PX;
   padding: 10px 20px;
 }
-
+/* footer */
+.footer {
+  background-color: #ffffff;
+  padding: 60px 0;
+  color: #000;
+}
+.footer .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color:var(--main-color1);
+  display: flex;
+  align-items: center;
+}
+.footer .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+.footer .social-icons a {
+  color:var(--main-color1);
+  margin-right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer a:hover {
+  color:var(--main-color1);
+}
+.footer .contact-info p {
+  margin: 0;
+  font-size: 14px;
+}
+.footer .instagram img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}

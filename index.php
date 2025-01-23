@@ -21,10 +21,10 @@
       <i class="fas fa-bars"></i>
     </button>
     <a class="navbar-brand fw-bold align-items-center d-flex" href="#">
-      <img src="assets/images/logo.png " alt="Logo" class="me-2 navbar-brand-img ps-5 ">
+      <img src="assets/images/logo.png " alt="Logo" class="me-2 navbar-brand-img ps-2 ">
       <span class="text-success fs-3 custom-font lh-1">
-        <div class="fs-1 site-main-name-font">NEW BEGINNINGS</div>
-        <div class="fs-2 text-center site-sub-name-color">BRISTOL LIMITED</div>
+        <div class="fs-1 site-main-name-font">NB CARE</div>
+        <div class="fs-5 text-center site-sub-name-color">NEW BEGINNINGS BRISTOL LIMITED</div>
       </span>
     </a>
 
@@ -32,6 +32,9 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link font-color-change" href="#" id="home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-color-change" href="#" id="aboutUs">EVENTS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link font-color-change" href="#" id="aboutUs">ABOUT US</a>
@@ -96,108 +99,9 @@
 <main>
 
 </main>
-<!-- Footer Top -->
-<!-- <footer class=" text-white sub-bg-color" >
-    <div class="fs-2 text-white" style="background-color:#e3f2fd">
-      <div class="d-flex align-items-center justify-content-center py-3 main-bg-color" >
-      <p class="mb-0 me-5">FOLLOW US FOR REGULAR UPDATES</p>
-      <a href="#" class="text-white me-4"><i class="fab fa-facebook fa-lg"></i></a>
-      <a href="#" class="text-white me-4"><i class="fab fa-twitter fa-lg"></i></a>
-      <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
-      </div>
-
-    </div> -->
-<!-- <div class="container">
-    <div class="row  justify-content-end">
-      <!-- Column 1 -->
-<!--  <div class="col-md-2" >
-        <ul class="list-unstyled pt-5" >
-          <li><a href="#" class="text-white text-decoration-none">Privacy policy</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Cookies policy</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Modern Slavery Statement</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Gender PayGap Report</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Site Map</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Company number:123456</a></li>
-        </ul>
-      </div> -->
-
-<!-- Column 2 -->
-<!-- <div class="col-md-10 d-flex align-items-start pt-5 text-end" >
-      <img src="assets/images/logo.png" alt="Logo"  class="ms-auto">
-      </div>
-    </div> -->
-
-<!-- Footer Bottom -->
-<!-- <div class="text-center mt-4">
-      <p class="mb-0">&copy; 2025 Etronic. All Rights Reserved.</p>
-    </div>
-  </div>
-</footer> -->
-<!-- <footer>
-  <div class="container-fluid sub-bg-color text-light mt-5 id=" contact">
-    <div class="container">
-      <div class="row gx-5">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <div class="d-flex flex-column align-items-center justify-content-center text-center sub-menu h-100  p-4">
-            <a href="index.html" class="navbar-brand">
-              <h1 class="m-0 "> <img class="footer-brand-img" src="assets/images/logo.png " alt="Image"> </h1>
-            </a>
-            <p class="mt-3 mb-4 site-main-name-font fs-5">We empower small and medium-scale businesses to develop
-              customized software solutions, empowering them to navigate the competitive market successfully.</p>
-
-          </div>
-        </div>
-        <div class="col-lg-8 col-md-6">
-          <div class="row gx-5">
-            <div class="col-lg-5 col-md-12 pt-5 mb-5">
-              <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                <h3 class="text-light mb-0">Get In Touch</h3>
-              </div>
-              <div class="d-flex mb-2">
-                <i class="bi bi-geo-alt site-main-name-font me-2"></i>
-                <p class="mb-0">51 Broad Street<br>Staple Hill,<br>Bristol,<br>BS16 5LS</p>
-              </div>
-              <div class="d-flex mb-2">
-                <i class="bi bi-envelope-open site-main-name-font me-2"></i>
-                <p class="mb-0">info@newbeginningsbristol.co.uk</p>
-              </div>
-              <div class="d-flex mb-2">
-                <i class="bi bi-telephone site-main-name-font me-2"></i>
-                <p class="mb-0">01174 220304| 01174 220345</p>
-              </div>
-              <div class="d-flex mt-4">
-                <a class="btn custom-btn btn-square me-2" target="_blank" rel="noopener noreferrer" href="#"><i
-                    class="fab fa-linkedin-in fw-normal"></i></a>
-                <a class="btn custom-btn btn-square me-2" target="_blank" rel="noopener noreferrer" href="#"><i
-                    class="fab fa-facebook-f fw-normal"></i></a>
-                <a class="btn custom-btn btn-square me-2" target="_blank" rel="noopener noreferrer" href="#"><i
-                    class="fab fa-youtube fw-normal"></i></a>
-                <a class="btn custom-btn btn-square" target="_blank" rel="noopener noreferrer" href="#"><i
-                    class="fab fa-instagram fw-normal"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid text-white" style="background: #061429;">
-    <div class="container text-center">
-      <div class="row justify-content-end">
-        <div class="col-lg-8 col-md-6">
-          <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Etronics.com</a>. All Rights Reserved.
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
-
-<footer>
-    <div class="container-fluid sub-bg-color text-light mt-5" id="contact">
+<!-- footer -->
+<!-- <footer> -->
+    <!-- <div class="container-fluid sub-bg-color text-light mt-5" id="contact">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-4 col-md-6 footer-about">
@@ -242,7 +146,7 @@
                 </div>
 
                 <!-- New Column for Google Map -->
-                <div class="col-lg-4 col-md-12">
+                <!-- <div class="col-lg-4 col-md-12">
                     <div class="map-container" style="height: 400px; overflow: hidden; border-radius: 8px;">
                         <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=51+Broad+Street,Staple+Hill,Bristol,BS16+5LS" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
@@ -261,10 +165,62 @@
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </div> -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Social Media -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="Logo">
+                        <span>NB CARE</span>
+                    </div>
+                    <p class="mt-3">Copyright 2020 DesigningMedia.<br>All Rights Reserved</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
 
+                <!-- Useful Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Coming Soon</a></li>
+                        <li><a href="#">404 Page</a></li>
+                        <li><a href="#">FAQ Page</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
 
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <div class="contact-info">
+                        <p><strong>Address:</strong><br>121 King Street, Melbourne,<br>3000, Australia</p>
+                        <p><strong>Email:</strong><br><a href="mailto:info@sencare.com">info@sencare.com</a></p>
+                        <p><strong>Phone:</strong><br>+1 23 45 6789</p>
+                    </div>
+                </div>
+
+                <!-- Instagram -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Instagram</h5>
+                    <div class="instagram-grid">
+                        <img src="placeholder1.jpg" alt="Instagram 1">
+                        <img src="placeholder2.jpg" alt="Instagram 2">
+                        <img src="placeholder3.jpg" alt="Instagram 3">
+                        <img src="placeholder4.jpg" alt="Instagram 4">
+                        <img src="placeholder5.jpg" alt="Instagram 5">
+                        <img src="placeholder6.jpg" alt="Instagram 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 <!-- Footer End -->
 
 
