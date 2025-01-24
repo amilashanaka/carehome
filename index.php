@@ -13,15 +13,20 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet" crossorigin="anonymous">
 
+  <!-- slider -->
+  <link rel="stylesheet" type="text/css" href="assets/css/extralayers.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="assets/rs-plugin/css/settings.css" media="screen" />
+  
+
 </head>
 <!-- Main Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold text-success" style="color:#ff5722 ;">
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold text-success sticky-top" style="background-color: #ffffff; color: #ff5722; z-index: 1030;">
   <div class="container-fluid">
-    <button id="menu-toggle" class="btn btn-outline-primary d-lg-none ">
+    <button id="menu-toggle" class="btn btn-outline-primary d-lg-none">
       <i class="fas fa-bars"></i>
     </button>
     <a class="navbar-brand fw-bold align-items-center d-flex" href="#">
-      <img src="assets/images/logo.png " alt="Logo" class="me-2 navbar-brand-img ps-2 ">
+      <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ps-2">
       <span class="text-success fs-3 custom-font lh-1">
         <div class="fs-1 site-main-name-font">NB CARE</div>
         <div class="fs-5 text-center site-sub-name-color">NEW BEGINNINGS BRISTOL LIMITED</div>
@@ -55,7 +60,7 @@
           </ul>
         </li>
 
-        <li class="nav-item dropdown ">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle font-color-change" href="#" id="navbarDropdownMenuLink" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
             OUR PEOPLE
@@ -100,72 +105,6 @@
 
 </main>
 <!-- footer -->
-<!-- <footer> -->
-    <!-- <div class="container-fluid sub-bg-color text-light mt-5" id="contact">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center sub-menu h-100 p-4">
-                        <a href="index.html" class="navbar-brand">
-                            <h1 class="m-0">
-                                <img class="footer-brand-img" src="assets/images/logo.png" alt="Image">
-                            </h1>
-                        </a>
-                        <p class="mt-3 mb-4 site-main-name-font fs-5">
-                            We empower small and medium-scale businesses to develop customized software solutions, empowering them to navigate the competitive market successfully.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="row gx-5">
-                        <div class="col-lg-12 col-md-12 pt-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Get In Touch</h3>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt site-main-name-font me-2"></i>
-                                <p class="mb-0">51 Broad Street<br>Staple Hill,<br>Bristol,<br>BS16 5LS</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open site-main-name-font me-2"></i>
-                                <p class="mb-0">info@newbeginningsbristol.co.uk</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-telephone site-main-name-font me-2"></i>
-                                <p class="mb-0">01174 220304| 01174 220345</p>
-                            </div>
-                            <div class="d-flex mt-4">
-                                <a class="btn custom-btn btn-square me-2" target="_blank" rel="noopener noreferrer" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn custom-btn btn-square me-2" target="_blank" rel="noopener noreferrer" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn custom-btn btn-square me-2" target="_blank" rel="noopener noreferrer" href="#"><i class="fab fa-youtube fw-normal"></i></a>
-                                <a class="btn custom-btn btn-square" target="_blank" rel="noopener noreferrer" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- New Column for Google Map -->
-                <!-- <div class="col-lg-4 col-md-12">
-                    <div class="map-container" style="height: 400px; overflow: hidden; border-radius: 8px;">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=51+Broad+Street,Staple+Hill,Bristol,BS16+5LS" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid text-white" style="background: #061429;">
-        <div class="container text-center">
-            <div class="row justify-content-end">
-                <div class="col-lg-8 col-md-6">
-                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white " href="https://etronicsolutions.com/">etronicsolutions.com</a>. All Rights Reserved. <span id="year"></span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -227,7 +166,7 @@
 <script src="assets/js/default-loader.js" crossorigin="anonymous"></script>
 <script src="assets/js/custom.js" crossorigin="anonymous"></script>
 <script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-
+<script type="text/javascript" src="assets/js/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
 
 </body>
 
