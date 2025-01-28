@@ -11,10 +11,11 @@
   <!-- bootstrap icons library -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="assets/css/custom.css" rel="stylesheet" crossorigin="anonymous"/>
  
   <!-- slider css -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+
   
 </head>
 <!-- Main Navigation -->
@@ -100,7 +101,7 @@
 
 <!-- Main Content -->
 <main>
-
+<?php include_once 'assets/Pages/home.html'; ?>
 </main>
 <!-- footer -->
     <footer class="footer">
@@ -161,13 +162,15 @@
 <!-- Footer End -->
 
 
-<script src="assets/js/default-loader.js" crossorigin="anonymous"></script>
-<script src="assets/js/custom.js" crossorigin="anonymous"></script>
-<script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
-<script src="js/slider.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
 </body>
+
+<script src="assets/js/bootstrap.js" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="assets/js/jquery-3.7.1.js" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" crossorigin="anonymous"></script> -->
+<script src="js/jquery.themepunch.revolution.min.js" type="text/javascript" ></script>
+<!-- <script src="assets/js/default-loader.js" crossorigin="anonymous"></script> -->
+<script src="assets/js/custom.js" crossorigin="anonymous"></script>
+<script src="js/slider.js" crossorigin="anonymous"></script>
 
 </html>

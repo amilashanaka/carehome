@@ -62,4 +62,3 @@ function errorMsg(error) {
     mainContent.innerHTML = "<p>Sorry, we couldn't load the content.</p>";
 
 }
-document.getElementById("year").textContent = new Date().getFullYear();

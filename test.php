@@ -3,29 +3,13 @@
 
 <html lang="en" class="no-js">
 <head>
-	<title>Convertible</title>
 
-	<meta charset="utf-8">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- REVOLUTION BANNER CSS SETTINGS -->
-	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="assets/css/settings.css" media="screen" />
 	<link href="assets/css/custom.css" rel="stylesheet" crossorigin="anonymous"/>
 	
-	
-	
-
-     <!-- jQuery KenBurn Slider  -->
-	 <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-	
-	
-
   
 </head>
 
@@ -178,7 +162,11 @@
 
 </body>
 
+<!-- jQuery KenBurn Slider  -->
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
 
-<script src="js/slider.js" crossorigin="anonymous"></script>
+<script src="assets/js/jquery-3.7.1.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+<script src="assets/js/slider.js" crossorigin="anonymous"></script>
 
 </html>
