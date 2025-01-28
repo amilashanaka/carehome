@@ -12,8 +12,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet" crossorigin="anonymous">
+ 
+  <!-- slider css -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300' rel='stylesheet' type='text/css'>
   
-
 </head>
 <!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold text-success sticky-top" style="background-color: #ffffff; color: #ff5722; z-index: 1030;">
@@ -163,7 +165,9 @@
 <script src="assets/js/custom.js" crossorigin="anonymous"></script>
 <script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
-
+<script src="js/slider.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 </body>
 
 </html>
