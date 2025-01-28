@@ -14,7 +14,7 @@
   <link href="assets/css/custom.css" rel="stylesheet" crossorigin="anonymous"/>
  
   <!-- slider css -->
-  <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="assets/css/settings.css" media="screen" />
 
   
 </head>
@@ -101,7 +101,9 @@
 
 <!-- Main Content -->
 <main>
+  <section>
 <?php include_once 'assets/Pages/home.html'; ?>
+</section>
 </main>
 <!-- footer -->
     <footer class="footer">
@@ -147,7 +149,7 @@
                 <div class="col-lg-3 col-md-6">
                     <h5>Instagram</h5>
                     <div class="instagram-grid">
-                        <img src="placeholder1.jpg" alt="Instagram 1">
+                        <img src="1.jpg" alt="Instagram 1">
                         <img src="placeholder2.jpg" alt="Instagram 2">
                         <img src="placeholder3.jpg" alt="Instagram 3">
                         <img src="placeholder4.jpg" alt="Instagram 4">
@@ -167,10 +169,8 @@
 <script src="assets/js/bootstrap.js" crossorigin="anonymous"></script>
 <script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 <script src="assets/js/jquery-3.7.1.js" crossorigin="anonymous"></script>
-<!-- <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" crossorigin="anonymous"></script> -->
-<script src="js/jquery.themepunch.revolution.min.js" type="text/javascript" ></script>
-<!-- <script src="assets/js/default-loader.js" crossorigin="anonymous"></script> -->
+<script src="assets/js/jquery.themepunch.revolution.min.js" type="text/javascript" ></script>
 <script src="assets/js/custom.js" crossorigin="anonymous"></script>
-<script src="js/slider.js" crossorigin="anonymous"></script>
+<script src="assets/js/slider.js" crossorigin="anonymous"></script>
 
 </html>
