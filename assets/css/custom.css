@@ -23,7 +23,10 @@
 #overlay.active {
   display: block;
 }
-
+.btn-outline-primary {
+  color: var(--main-color1);
+  border-color:var(--main-color1);
+}
 .image-overlay {
   width: 150px;
   height: auto;

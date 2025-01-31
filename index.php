@@ -86,7 +86,7 @@
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h5 class="fw-bold site-main-name-font">NB CARE</h5>
     <button id="close-nav" class="btn btn-outline-secondary">
-      <i class="fas fa-times"></i>
+      <i class="fas fa-times" style="color: green;"></i>
     </button>
   </div>
   <ul class="nav flex-column ">
