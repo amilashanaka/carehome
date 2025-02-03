@@ -1,82 +1,93 @@
-
-		<div id="slider">
-			<!--
-			#################################
-				- THEMEPUNCH BANNER -
-			#################################
-			-->
+<!-- slider start -->
+<section>
+  <div id="slider">
 
 
-			<div class="fullwidthbanner-container">
-				<div class="fullwidthbanner">
-					<ul>
-						<!-- THE FIRST SLIDE -->
-						<li data-transition="3dcurtain-vertical" data-slotamount="10" data-masterspeed="300">
-							<!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
-							<img alt="" src="upload/slider-revolution/1.jpg" >
 
-							<!-- THE CAPTIONS IN THIS SLDIE -->
-							<div class="caption large_text sfb"
-								 data-x="170"
-								 data-y="128"
-								 data-speed="600"
-								 data-start="1200"
-								 data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine" >Welcome to the Most Complete Html Template</div>
+    <div class="fullwidthbanner-container">
+      <div class="fullwidthbanner" style="position: relative;">
+        <ul>
+          <!-- THE FIRST SLIDE -->
+          <li data-transition="3dcurtain-vertical" data-slotamount="10" data-masterspeed="300">
+            <!-- THE MAIN IMAGE IN THE FIRST SLIDE -->
+            <img alt="" src="assets/images/1.jpg">
 
-						<!-- THE second SLIDE -->
-                                                
-                                               
-						<li data-transition="papercut" data-slotamount="15" data-masterspeed="300">
-							<!-- THE MAIN IMAGE IN THE second SLIDE -->
-							<img alt="" src="upload/slider-revolution/2.jpg" >
+            <!-- THE CAPTIONS IN THIS SLDIE -->
+            <div class="caption large_text sfb" data-x="20" data-y="150" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <span class="fw-bold text-shadow"
+                style="color: rgb(7, 248, 67); font-size: 40px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                We provides <br>a welcoming environment<br> for you ...
+              </span>
+            </div>
 
-							<!-- THE CAPTIONS IN THIS SLDIE -->
 
-							<div class="caption randomrotate"
-								 data-x="720"
-								 data-y="130"
-								 data-speed="600"
-								 data-start="1200"
-								 data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine" ><img src="images/slider-icons/image.png" alt="Image 1"></div>
+            <a href="#" class="caption modern_small_text_dark sft btn btn-success btn-lg custom-btn"
+              style="padding: 1.5rem 3rem; font-size: 1.5rem; border-radius: 2rem;" data-x="10" data-y="450"
+              data-speed="600" data-start="2700" data-easing="easeOutExpo" data-end="7850" data-endspeed="300"
+              data-endeasing="easeInSine">
+              GET IN TOUCH
+            </a>
 
-							<div class="caption modern_medium_light sft stt"
-								 data-x="110"
-								 data-y="148"
-								 data-speed="500"
-								 data-start="1500"
-								 data-easing="easeOutExpo" data-end="7100" data-endspeed="300" data-endeasing="easeInSine" ><i class="fa fa-list"></i>Shortcode Generator</div>
+            <div class="caption randomrotate" data-x="900" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/sliderPopupImg.png" alt="Image 1">
+            </div>
 
-							<div class="caption modern_medium_light sft stt"
-								 data-x="394"
-								 data-y="148"
-								 data-speed="600"
-								 data-start="1600"
-								 data-easing="easeOutExpo" data-end="7300" data-endspeed="300" data-endeasing="easeInSine" ><i class="fa fa-building-o"></i>Optimized Code</div>
+          </li>
+          <!-- THE second SLIDE -->
 
-							
-							
-						<!-- THE third SLIDE -->
-						<li data-transition="turnoff" data-slotamount="1" data-masterspeed="300">
-							<!-- THE MAIN IMAGE IN THE third SLIDE -->
-							<img alt="" src="upload/slider-revolution/3.jpg" >
 
-							<!-- THE CAPTIONS IN THIS SLDIE -->
-							<div class="caption large_text sfb"
-								 data-x="0"
-								 data-y="185"
-								 data-speed="600"
-								 data-start="1200"
-								 data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine" >Hello and welcome to <span> Convertible</span></div>
+          <li data-transition="papercut" data-slotamount="15" data-masterspeed="300">
+            <!-- THE MAIN IMAGE IN THE second SLIDE -->
+            <img alt="" src="assets/images/2.jpg">
 
-							<div class="caption medium_grey sft stt"
-								 data-x="0"
-								 data-y="224"
-								 data-speed="500"
-								 data-start="1300"
-								 data-easing="easeOutExpo" data-end="7100" data-endspeed="300" data-endeasing="easeInSine" >another creative html template brought to you by Premium Layers</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- End slider -->
+            <!-- THE CAPTIONS IN THIS SLDIE -->
+            <div class="caption large_text sfb" data-x="20" data-y="150" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <span class="fw-bold text-shadow"
+                style="color: rgb(7, 248, 67); font-size: 40px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                We makes<br> every day special<br> with warmth <br>and care....
+              </span>
+            </div>
+
+
+            <a href="#" class="caption modern_small_text_dark sft btn btn-success btn-lg custom-btn"
+              style="padding: 1.5rem 3rem; font-size: 1.5rem; border-radius: 2rem;" data-x="10" data-y="450"
+              data-speed="600" data-start="2700" data-easing="easeOutExpo" data-end="7850" data-endspeed="300"
+              data-endeasing="easeInSine">
+              GET IN TOUCH
+            </a>
+
+          </li>
+
+          <!-- THE third SLIDE -->
+          <li data-transition="turnoff" data-slotamount="1" data-masterspeed="300">
+            <!-- THE MAIN IMAGE IN THE third SLIDE -->
+            <img alt="" src="assets/images/3.jpg">
+
+            <!-- THE CAPTIONS IN THIS SLDIE -->
+            <div class="caption large_text sfb" data-x="20" data-y="150" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <span class="fw-bold text-shadow"
+                style="color: rgb(7, 248, 67); font-size: 40px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">
+                In here<br> every day brings<br> comfort, joy, <br>and a fresh start ...
+              </span>
+            </div>
+
+
+            <a href="#" class="caption modern_small_text_dark sft btn btn-success btn-lg custom-btn"
+              style="padding: 1.5rem 3rem; font-size: 1.5rem; border-radius: 2rem;" data-x="10" data-y="450"
+              data-speed="600" data-start="2700" data-easing="easeOutExpo" data-end="7850" data-endspeed="300"
+              data-endeasing="easeInSine">
+              GET IN TOUCH
+            </a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End slider -->
