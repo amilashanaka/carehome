@@ -1,13 +1,3 @@
-<?php
-include 'header.php';
-include 'navbar.php';
-include 'slider.php';
-
-include 'home_welcome.php';
-
-
-<<<<<<< HEAD
-</head>
 <!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold site-main-name-font sticky-top"
   style="background-color: #ffffff; color: #ff5722; z-index: 1030;">
@@ -72,11 +62,13 @@ include 'home_welcome.php';
 </nav>
 
 <!-- Mobile Navigation -->
+ <!-- Overlay -->
+<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-10"></div>
 <div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-75">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h5 class="fw-bold site-main-name-font">NB CARE</h5>
     <button id="close-nav" class="btn btn-outline-secondary">
-      <i class="fas fa-times" style="color: green;"></i>
+      <i class="fas fa-times"></i>
     </button>
   </div>
   <ul class="nav flex-column ">
@@ -104,82 +96,3 @@ include 'home_welcome.php';
       <a class="nav-link site-main-name-font" href="#">CONTACT US</a>
   </ul>
 </div>
-
-<!-- Overlay -->
-<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
-
-<!-- Main Content -->
-<main>
-  <section>
-    <?php include_once 'assets/Pages/home.html'; ?>
-  </section>
-</main>
-<!-- footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <!-- Logo and Social Media -->
-      <div class="col-lg-3 col-md-6">
-        <div class="logo">
-          <img src="assets/images/logo.png" alt="Logo">
-          <span>NB CARE</span>
-        </div>
-        <p class="mt-3">Copyright 2020 DesigningMedia.<br>All Rights Reserved</p>
-        <div class="social-icons mt-3">
-          <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
-        </div>
-      </div>
-
-      <!-- Useful Links -->
-      <div class="col-lg-3 col-md-6">
-        <h5>Useful Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Coming Soon</a></li>
-          <li><a href="#">404 Page</a></li>
-          <li><a href="#">FAQ Page</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact Info -->
-      <div class="col-lg-3 col-md-6">
-        <h5>Contact Info</h5>
-        <div class="contact-info">
-          <p><strong>Address:</strong><br>121 King Street, Melbourne,<br>3000, Australia</p>
-          <p><strong>Email:</strong><br><a href="mailto:info@sencare.com">info@sencare.com</a></p>
-          <p><strong>Phone:</strong><br>+1 23 45 6789</p>
-        </div>
-      </div>
-
-      <!-- Instagram -->
-      <div class="col-lg-3 col-md-6">
-        <h5>Instagram</h5>
-        <div class="instagram-grid">
-          <img src="assets/images/f1.jpg" alt="Instagram 1">
-          <img src="assets/images/f2.jpg" alt="Instagram 2">
-          <img src="assets/images/f3.jpg" alt="Instagram 3">
-          <img src="assets/images/f4.jpg" alt="Instagram 4">
-          <img src="assets/images/f5.jpg" alt="Instagram 5">
-          <img src="assets/images/f6.jpg" alt="Instagram 6">
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Footer End -->
-=======
-?>
->>>>>>> dev
-
-
-
-
-<?php
-
-include 'footer.php';
-
-?>
