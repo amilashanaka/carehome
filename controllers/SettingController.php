@@ -18,7 +18,7 @@ class SettingController extends TableController
                 return (in_array($element,$this->get_by_id(1)['data'] ) ) ?   "System Name":  $this->get_by_id(1)['data']['f1'];
                 break;
             case 'f2':
-                return (in_array($element,$this->get_by_id(1)['data'] ) ) ? "System Short Name": $this->get_by_id(1)['data']['f2']  ;
+                return (in_array($element,$this->get_by_id(1)['data'] ) ) ? "Syatem Full Name": $this->get_by_id(1)['data']['f2']  ;
                 break;
             case 'f3':
                 return (in_array($element,$this->get_by_id(1)['data'] ) ) ?  "Admin Email": $this->get_by_id(1)['data']['f3'] ;

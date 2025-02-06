@@ -7,7 +7,7 @@ $form_config = [
     'inputs' => [
         'id' => ['type' => 'hidden', 'value' => ''],
         'f1' => ['label' => 'App Name', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
-        'f2' => ['label' => 'App Short Name', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
+        'f2' => ['label' => 'System Full Name', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'f3' => ['label' => 'App Back End Name', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'f4' => ['label' => 'Phone Number', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'f5' => ['label' => 'Email', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],

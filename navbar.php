@@ -9,7 +9,7 @@
       <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ps-2">
       <span class="site-main-name-font fs-3 custom-font lh-1">
         <div class="fs-1 site-main-name-font">NB CARE</div>
-        <div class="fs-5 text-center site-sub-name-color">NEW BEGINNINGS BRISTOL LIMITED</div>
+        <div class="fs-5 text-center site-sub-name-color"><?= $setting->getSettings('f2')?></div>
       </span>
     </a>
 
