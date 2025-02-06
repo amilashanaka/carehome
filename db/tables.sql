@@ -1,6 +1,6 @@
--- Active: 1717229315063@@127.0.0.1@3306@sky
+-- Active: 1717229315063@@127.0.0.1@3306@chms
 
- create DATABASE sky;
+--  create DATABASE crhm;
 use crhm;
 
 DROP TABLE IF EXISTS admins;
