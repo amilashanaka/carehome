@@ -10,7 +10,6 @@ include 'home_eventsTable.php';
 include 'home_eventsCards.php';
 include 'home_happyClients.php';
 include 'home_enquiry.php';
-
 ?>
 
 
