@@ -1,0 +1,35 @@
+ /*@media screen and (max-width: 768px) {
+    .dt-buttons {
+        display: none;
+    }
+}*/
+ @media screen and (max-width: 1060px) {
+     .btn-csv {
+         display: none;
+     }
+ }
+
+
+ /* hide specific buttons*/
+ @media screen and (max-width: 760px) {
+
+     .btn-csv,
+     .btn-excel,
+     .btn-pdf,
+     .btn-print,
+     .dataTables_filter,
+     .dataTables_searching {
+         display: none;
+     }
+
+ }
+
+ .filepond--root {
+     width: 170px;
+     margin: 0 auto;
+ }
+
+ .filepond--drop-label {
+     font-size: 14px;
+     /* Adjust the font size for the label text */
+ }
