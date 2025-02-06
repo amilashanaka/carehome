@@ -13,11 +13,13 @@
 
 .mobile-nav.active {
   transform: translateX(0);
+  display: block;
 }
 
 #overlay {
   display: none;
   z-index: 1040;
+  
 }
 
 #overlay.active {

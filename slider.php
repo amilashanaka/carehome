@@ -29,11 +29,22 @@
               GET IN TOUCH
             </a>
 
+            <div class="caption randomrotate" data-x="700" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s1.png" alt="Image 1">
+            </div>
+            <div class="caption randomrotate" data-x="500" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s2.png" alt="Image 1">
+            </div>
+            <div class="caption randomrotate" data-x="300" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s3.png" alt="Image 1">
+            </div>
             <div class="caption randomrotate" data-x="900" data-y="300" data-speed="600" data-start="1200"
               data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
-              <img src="assets/images/sliderPopupImg.png" alt="Image 1">
+              <img src="assets/images/s4.png" alt="Image 1">
             </div>
-
           </li>
           <!-- THE second SLIDE -->
 
@@ -59,6 +70,24 @@
               GET IN TOUCH
             </a>
 
+            <div class="caption randomrotate" data-x="700" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s5.png" alt="Image 1">
+            </div>
+            <div class="caption randomrotate" data-x="500" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s6.png" alt="Image 1">
+            </div>
+            <div class="caption randomrotate" data-x="300" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s7.png" alt="Image 1">
+            </div>
+            <div class="caption randomrotate" data-x="900" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s8.png" alt="Image 1">
+            </div>
+          </li>
+
           </li>
 
           <!-- THE third SLIDE -->
@@ -82,6 +111,24 @@
               data-endeasing="easeInSine">
               GET IN TOUCH
             </a>
+
+            <div class="caption randomrotate" data-x="700" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s11.png" alt="Image AA">
+            </div>
+            <div class="caption randomrotate" data-x="500" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s12.png" alt="Image BB">
+            </div>
+            <div class="caption randomrotate" data-x="300" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s10.png" alt="Image CC">
+            </div>
+            <div class="caption randomrotate" data-x="900" data-y="300" data-speed="600" data-start="1200"
+              data-easing="easeOutExpo" data-end="7000" data-endspeed="300" data-endeasing="easeInSine">
+              <img src="assets/images/s9.png" alt="Image DD">
+            </div>
+          </li>
 
           </li>
         </ul>
