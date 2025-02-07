@@ -63,7 +63,9 @@
 
 <!-- Mobile Navigation -->
 <!-- Overlay -->
-<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-opacity-10"></div>
+<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-opacity-10">
+  
+</div>
 <div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-50">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h5 class="fw-bold site-main-name-font">NB CARE</h5>
@@ -100,7 +102,7 @@
   <div class="social-icons mt-3 mb-4">
     <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
     <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-    <a href="#" aria-label="Pinterest"><i class="bi bi-instagram"></i></a>
+    <a href="#" aria-label="Intragram"><i class="bi bi-instagram"></i></a>
   </div>
 
   <div class="d-flex mb-4">
