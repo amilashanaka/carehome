@@ -30,7 +30,7 @@ class SettingController extends TableController
                 return (in_array($element,$this->get_by_id(1)['data'] ) ) ? "Email": $this->get_by_id(1)['data']['f5'];
                 break;
             case 'f6':
-                return (in_array($element,$this->get_by_id(1)['data'] ) ) ? "About Us": $this->get_by_id(1)['data']['f6'];
+                return (in_array($element,$this->get_by_id(1)['data'] ) ) ? "Address": $this->get_by_id(1)['data']['f6'];
                 break;
             case 'f7':
                 return (in_array($element,$this->get_by_id(1)['data'] ) ) ? "Facebook": $this->get_by_id(1)['data']['f7'];

@@ -8,7 +8,7 @@
     <a class="navbar-brand fw-bold align-items-center d-flex" href="#">
       <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ps-2">
       <span class="site-main-name-font fs-3 custom-font lh-1">
-        <div class="fs-1 site-main-name-font">NB CARE</div>
+        <div class="fs-1 site-main-name-font"><?= $setting->getSettings('f1')?></div>
         <div class="fs-5 text-center site-sub-name-color"><?= $setting->getSettings('f2')?></div>
       </span>
     </a>
@@ -107,7 +107,7 @@
 
   <div class="d-flex mb-4">
     <i class="bi bi-geo-alt site-main-name-font me-2"></i>
-    <p class="mb-0">123 Street, New York, USA</p>
+    <p class="mb-0"><?= $setting->getSettings('f6')?></p>
   </div>
   <div class="d-flex mb-4">
     <i class="bi bi-envelope-open site-main-name-font me-2"></i>
