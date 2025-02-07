@@ -62,7 +62,7 @@
 </nav>
 
 <!-- Mobile Navigation -->
- <!-- Overlay -->
+<!-- Overlay -->
 <div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-opacity-10"></div>
 <div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-50">
   <div class="d-flex justify-content-between align-items-center mb-4">
@@ -72,27 +72,47 @@
     </button>
   </div>
   <ul class="nav flex-column ">
-    <a class="nav-link site-main-name-font" href="#" onclick="changeColor(this)">HOME</a>
-      <a class="nav-link site-main-name-font " href="#">EVENTS</a>
-      <a class="nav-link site-main-name-font" href="#">ABOUT US</a>
-      <a class="nav-link site-main-name-font" href="#">OUR HOMES</a>
-      <div>
-        <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#careSubmenu">OUR CARE</a>
-        <div id="careSubmenu" class="collapse ps-3">
-          <a class="nav-link site-sub-name-color" href="#">NURSING CARE</a>
-          <a class="nav-link site-sub-name-color" href="#">DEMENTIA CARE</a>
-          <a class="nav-link site-sub-name-color" href="#">RESIDENTIAL CARE</a>
-          <a class="nav-link site-sub-name-color" href="#">RESPITE CARE</a>
-        </div>
+    <a class="nav-link site-main-name-font" href="#">HOME</a>
+    <a class="nav-link site-main-name-font " href="#">EVENTS</a>
+    <a class="nav-link site-main-name-font" href="#">ABOUT US</a>
+    <a class="nav-link site-main-name-font" href="#">OUR HOMES</a>
+    <div>
+      <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#careSubmenu">OUR
+        CARE</a>
+      <div id="careSubmenu" class="collapse ps-3">
+        <a class="nav-link site-sub-name-color" href="#">NURSING CARE</a>
+        <a class="nav-link site-sub-name-color" href="#">DEMENTIA CARE</a>
+        <a class="nav-link site-sub-name-color" href="#">RESIDENTIAL CARE</a>
+        <a class="nav-link site-sub-name-color" href="#">RESPITE CARE</a>
       </div>
-      <div>
-        <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#peopleSubmenu">OUR
-          PEOPLE</a>
-        <div id="peopleSubmenu" class="collapse ps-3">
-          <a class="nav-link site-sub-name-color" href="#">CAREERS</a>
-        </div>
+    </div>
+    <div>
+      <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#peopleSubmenu">OUR
+        PEOPLE</a>
+      <div id="peopleSubmenu" class="collapse ps-3">
+        <a class="nav-link site-sub-name-color" href="#">CAREERS</a>
       </div>
-      <a class="nav-link site-main-name-font" href="#">NEWS</a>
-      <a class="nav-link site-main-name-font" href="#">CONTACT US</a>
+    </div>
+    <a class="nav-link site-main-name-font" href="#">NEWS</a>
+    <a class="nav-link site-main-name-font" href="#">CONTACT US</a>
   </ul>
+
+  <div class="social-icons mt-3 mb-4">
+    <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a href="#" aria-label="Pinterest"><i class="bi bi-instagram"></i></a>
+  </div>
+
+  <div class="d-flex mb-4">
+    <i class="bi bi-geo-alt site-main-name-font me-2"></i>
+    <p class="mb-0">123 Street, New York, USA</p>
+  </div>
+  <div class="d-flex mb-4">
+    <i class="bi bi-envelope-open site-main-name-font me-2"></i>
+    <p class="mb-0">info@example.com</p>
+  </div>
+  <div class="d-flex mb-4">
+    <i class="bi bi-telephone site-main-name-font me-2"></i>
+    <p class="mb-0">+012 345 67890</p>
+  </div>
 </div>

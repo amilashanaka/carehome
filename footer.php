@@ -12,7 +12,7 @@
         <div class="social-icons mt-3">
           <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
           <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
 
