@@ -4,7 +4,6 @@ include_once  './inc/sys.php';
 include_once  './inc/functions.php';
 include_once  './controllers/index.php';
 
-
 ?>
 
 <!DOCTYPE html>
