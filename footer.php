@@ -34,7 +34,7 @@
         <div class="contact-info">
           <p><strong>Address:</strong><br>121 King Street, Melbourne,<br>3000, Australia</p>
           <p><strong>Email:</strong><br><a href="mailto:info@sencare.com">info@sencare.com</a></p>
-          <p><strong>Phone:</strong><br>+1 23 45 6789</p>
+          <p><strong>Phone:</strong><br><?= $setting->getSettings('f4')?></p>
         </div>
       </div>
 
