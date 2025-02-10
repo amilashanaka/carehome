@@ -13,7 +13,7 @@ include_once '../inc/auth.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= $sys['System Name'] ?></title>
+    <title><?= $setting->getSettings('f3')?></title>
 
     <!-- Theme style -->
     <link rel="stylesheet" href="assets/css/adminlte.css">

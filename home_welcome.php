@@ -14,8 +14,7 @@
         their friends and enjoy the social atmosphere with a drink in a welcoming environment. Please give us a call if
         you’d like more information.</p>
       <a href="#" class="btn custom-btn btn-lg">About Us</a>
-      <p class="mt-3"><strong>Need clinical advice?</strong><br><span class="fs-4 green-highlight">0800 123 45
-          678</span></p>
+      <p class="mt-3"><span class="fs-4 green-highlight"><?=$setting->getSettings('f4')?></span></p>
     </div>
 
     <!-- Image -->

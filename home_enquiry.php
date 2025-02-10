@@ -26,7 +26,7 @@
             </div>
             <div class="ps-4">
               <h5 class="mb-2">Feel free to as any question</h5>
-              <h4 class="site-sub-name-color mb-0">01174 220304 | 01174 220345</h4>
+              <h4 class="site-sub-name-color mb-0"><?=$setting->getSettings('f4')?></h4>
             </div>
           </div>
         </div>
