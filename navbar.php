@@ -76,7 +76,7 @@
   <ul class="nav flex-column ">
     <a class="nav-link site-main-name-font" href="#">HOME</a>
     <a class="nav-link site-main-name-font " href="#">EVENTS</a>
-    <a class="nav-link site-main-name-font" href="#">ABOUT US</a>
+    <a class="nav-link site-main-name-font" href="aboutUs.php">ABOUT US</a>
     <a class="nav-link site-main-name-font" href="#">OUR HOMES</a>
     <div>
       <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#careSubmenu">OUR
