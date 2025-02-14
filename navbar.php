@@ -107,14 +107,16 @@
 
   <div class="d-flex mb-4">
     <i class="bi bi-geo-alt site-main-name-font me-2"></i>
-    <p class="mb-0"><?= $setting->getSettings('f6')?></p>
+    <!-- Address -->
+    <p class="mb-0"><?= $setting->getSettings('f6')?></p> 
   </div>
   <div class="d-flex mb-4">
     <i class="bi bi-envelope-open site-main-name-font me-2"></i>
-    <p class="mb-0">info@example.com</p>
+    <!-- Email -->
+    <p class="mb-0"><?= $setting->getSettings('f5')?></p>  
   </div>
   <div class="d-flex mb-4">
     <i class="bi bi-telephone site-main-name-font me-2"></i>
-    <p class="mb-0">+012 345 67890</p>
+    <p class="mb-0"><?= $setting->getSettings('f4')?></p>
   </div>
 </div>
