@@ -7,12 +7,12 @@ $side_menu = array();
 
 array_push( $side_menu, array( 'name' => 'Dashboard', 'icon' => 'fas fa-tachometer-alt', 'url' => '/', 'active' => 'active', 'menu' => 'menu-open', 'submenu' => '' ) );
 array_push( $side_menu, array( 'name' => 'Staff', 'icon' => 'fas fa-user-tie', 'url' => 'admin_list', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'List', 'icon' => 'fas fa-list', 'url' => 'admin_list?role=Mg==' ) ) ) );
-array_push( $side_menu, array( 'name' => 'Users', 'icon' => 'fas fa-users', 'url' => 'user_list', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'Top', 'icon' => 'fas fa-list', 'url' => 'user_list?level=Mw==' ), array( 'name' => 'Middle', 'icon' => 'fas fa-list', 'url' => 'user_list?level=Mg==' ), array( 'name' => 'New', 'icon' => 'fas fa-list', 'url' => 'user_list?level=MQ==' ) ) ) );
-array_push( $side_menu, array( 'name' => 'Projects', 'icon' => ' fas fa-cube', 'url' => '#', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'List', 'icon' => 'fas fa-list', 'url' => 'project_list' ), ) ) );
+// array_push( $side_menu, array( 'name' => 'Users', 'icon' => 'fas fa-users', 'url' => 'user_list', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'Top', 'icon' => 'fas fa-list', 'url' => 'user_list?level=Mw==' ), array( 'name' => 'Middle', 'icon' => 'fas fa-list', 'url' => 'user_list?level=Mg==' ), array( 'name' => 'New', 'icon' => 'fas fa-list', 'url' => 'user_list?level=MQ==' ) ) ) );
+array_push( $side_menu, array( 'name' => 'Events', 'icon' => ' fas fa-cube', 'url' => '#', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'List', 'icon' => 'fas fa-list', 'url' => 'event_list' ), ) ) );
 array_push( $side_menu, array( 'name' => 'Blogs', 'icon' => 'fas fa-book', 'url' => '#', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'List', 'icon' => 'fas fa-list', 'url' => 'blog_list' ) ) ) );
-array_push( $side_menu, array( 'name' => 'Products', 'icon' => 'fas fa-box', 'url' => '#', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'List', 'icon' => 'fas fa-list', 'url' => 'product_list' ) ) ) );
-array_push( $side_menu, array( 'name' => 'Gallery', 'icon' => 'fas fa-box', 'url' => 'gallery', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'List', 'icon' => 'fas fa-list', 'url' => 'gallery_list' ) ) ) );
-array_push( $side_menu, array( 'name' => 'How It Work', 'icon' => 'fas fa-cogs', 'url' => 'how_it_work', 'active' => '', 'menu' => '', 'submenu' =>'') );
+// array_push( $side_menu, array( 'name' => 'Products', 'icon' => 'fas fa-box', 'url' => '#', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'List', 'icon' => 'fas fa-list', 'url' => 'product_list' ) ) ) );
+// array_push( $side_menu, array( 'name' => 'Gallery', 'icon' => 'fas fa-box', 'url' => 'gallery', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'List', 'icon' => 'fas fa-list', 'url' => 'gallery_list' ) ) ) );
+array_push( $side_menu, array( 'name' => 'Home Page', 'icon' => 'fas fa-cogs', 'url' => 'home_page', 'active' => '', 'menu' => '', 'submenu' =>'') );
 array_push( $side_menu, array( 'name' => 'System Settings', 'icon' => 'fa fa-cog', 'url' => 'settings', 'active' => '', 'menu' => '', 'submenu' =>'') );
 array_push( $side_menu, array( 'name' => 'Testimonial', 'icon' => 'fas fa-comments', 'url' => '#', 'active' => '', 'menu' => '', 'submenu' => array( array( 'name' => 'List', 'icon' => 'fas fa-list', 'url' => 'testimonial_list' ) ) ) );
 array_push( $side_menu, array( 'name' => 'About', 'icon' => 'fas fa-info-circle', 'url' => 'about', 'active' => '', 'menu' => '', 'submenu' =>'') );
@@ -34,7 +34,7 @@ array_push( $side_menu, array( 'name' => 'Log Out', 'icon' => ' fas  fa-sign-out
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link">
         <img src="assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3 " style="opacity: .8">
-        <span class="brand-text font-weight-light"> <?= $sys['APP_F_NAME'] ?></span>
+        <span class="brand-text font-weight-light"> <?= $setting->getSettings('f1') ?></span>
     </a><!-- Sidebar -->
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->

@@ -33,8 +33,8 @@
         <h5>Contact Info</h5>
         <div class="contact-info">
           <p><strong>Address:</strong><br>121 King Street, Melbourne,<br>3000, Australia</p>
-          <p><strong>Email:</strong><br><a href="<?= $setting->getSettings('f5')?>"><?= $setting->getSettings('f5')?></a></p>
-          <p><strong>Phone:</strong><br><?= $setting->getSettings('f4')?></p>
+          <p><strong>Email:</strong><br><a href="<?= $setting->getSettings('f5') ?>"><?= $setting->getSettings('f5') ?></a></p>
+          <p><strong>Phone:</strong><br><?= $setting->getSettings('f4') ?></p>
         </div>
       </div>
 
@@ -52,7 +52,42 @@
       </div>
     </div>
   </div>
+
+  <button
+    type="button"
+    class="btn btn-success btn-floating btn-lg float-lg-right"
+    id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 </footer>
+
+<script>
+  //Get the button
+  let mybutton = document.getElementById("btn-back-to-top");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 
 <!-- Footer End -->
 <script src="assets/js/bootstrap.min.js" crossorigin="anonymous"></script>

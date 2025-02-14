@@ -7,7 +7,7 @@
           <h2 class="custom-heading">
             Our <span class="custom-highlight">People</span>
         </div>
-        <p class="mb-4 fs-4">Our people – caring for the people that matter most in the world to you – really set NEW
+        <p class="mb-4 fs-4 text-justify-content-wrapper">Our people – caring for the people that matter most in the world to you – really set NEW
           BEGINNINGS apart.
 
           As well as being highly skilled and professional, they are compassionate and understanding, helping to create

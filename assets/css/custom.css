@@ -4,6 +4,7 @@
   ;
   --social-media-strip: rgb(17, 146, 238)
 }
+
 /* mobile nav css start*/
 .mobile-nav {
   transform: translateX(-100%);
@@ -15,36 +16,37 @@
   transform: translateX(0);
   display: block;
 }
+
 .social-icons a {
-  color: var(--main-color1);              
-  margin-right: 15px;        
-  font-size: 24px;            
-  transition: color 0.3s ease, transform 0.3s ease; 
-  padding: 8px;              
+  color: var(--main-color1);
+  margin-right: 15px;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 8px;
 }
 
 .social-icons a:hover {
-  color: var(--main-color2);          
-  transform: scale(1.2);      
+  color: var(--main-color2);
+  transform: scale(1.2);
 }
 
 /* Menu Items Styling */
 .mobile-nav a {
-  padding: 15px 10px;         
-  color:var(--main-color1);             
-  text-decoration: none;      
+  padding: 15px 10px;
+  color: var(--main-color1);
+  text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .mobile-nav a:hover {
-  color:var(--main-color2);               
-  border-radius: 5px;        
+  color: var(--main-color2);
+  border-radius: 5px;
 }
 
 #overlay {
   display: none;
   z-index: 1040;
-  
+
 }
 
 #overlay.active {
@@ -55,8 +57,9 @@
 /* mobile nav css end*/
 .btn-outline-primary {
   color: var(--main-color1);
-  border-color:var(--main-color1);
+  border-color: var(--main-color1);
 }
+
 .image-overlay {
   width: 150px;
   height: auto;
@@ -108,11 +111,13 @@ main-back-color {
 .text-shadow {
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.8);
 }
+
 .fade-in-text span {
   opacity: 0;
   display: inline-block;
   animation: fadeIn 0.5s forwards;
 }
+
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -301,4 +306,16 @@ td {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+.aboutUs-para {
+  background-color: rgb(196, 248, 196);
+  color: rgb(208, 92, 243);
 }

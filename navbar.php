@@ -22,7 +22,7 @@
           <a class="nav-link font-color-change" href="#" id="aboutUs">EVENTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="#" id="aboutUs">ABOUT US</a>
+          <a class="nav-link font-color-change" href="aboutUs.php" id="aboutUs">ABOUT US</a>
         </li>
         <li class="nav-item">
           <a class="nav-link font-color-change" href="#">OUR HOMES</a>
@@ -54,7 +54,7 @@
           <a class="nav-link font-color-change" href="#">NEWS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="#">CONTACT US</a>
+          <a class="nav-link font-color-change" href="contactUs.php">CONTACT US</a>
         </li>
       </ul>
     </div>
@@ -76,7 +76,7 @@
   <ul class="nav flex-column ">
     <a class="nav-link site-main-name-font" href="#">HOME</a>
     <a class="nav-link site-main-name-font " href="#">EVENTS</a>
-    <a class="nav-link site-main-name-font" href="#">ABOUT US</a>
+    <a class="nav-link site-main-name-font" href="aboutUs.php">ABOUT US</a>
     <a class="nav-link site-main-name-font" href="#">OUR HOMES</a>
     <div>
       <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#careSubmenu">OUR
@@ -96,7 +96,7 @@
       </div>
     </div>
     <a class="nav-link site-main-name-font" href="#">NEWS</a>
-    <a class="nav-link site-main-name-font" href="#">CONTACT US</a>
+    <a class="nav-link site-main-name-font" href="contactUs.php">CONTACT US</a>
   </ul>
 
   <div class="social-icons mt-3 mb-4">
@@ -107,14 +107,16 @@
 
   <div class="d-flex mb-4">
     <i class="bi bi-geo-alt site-main-name-font me-2"></i>
-    <p class="mb-0"><?= $setting->getSettings('f6')?></p>
+    <!-- Address -->
+    <p class="mb-0"><?= $setting->getSettings('f6')?></p> 
   </div>
   <div class="d-flex mb-4">
     <i class="bi bi-envelope-open site-main-name-font me-2"></i>
-    <p class="mb-0">info@example.com</p>
+    <!-- Email -->
+    <p class="mb-0"><?= $setting->getSettings('f5')?></p>  
   </div>
   <div class="d-flex mb-4">
     <i class="bi bi-telephone site-main-name-font me-2"></i>
-    <p class="mb-0">+012 345 67890</p>
+    <p class="mb-0"><?= $setting->getSettings('f4')?></p>
   </div>
 </div>
