@@ -22,7 +22,7 @@
           <a class="nav-link font-color-change" href="#" id="aboutUs">EVENTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="#" id="aboutUs">ABOUT US</a>
+          <a class="nav-link font-color-change" href="aboutUs.php" id="aboutUs">ABOUT US</a>
         </li>
         <li class="nav-item">
           <a class="nav-link font-color-change" href="#">OUR HOMES</a>
@@ -54,7 +54,7 @@
           <a class="nav-link font-color-change" href="#">NEWS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="#">CONTACT US</a>
+          <a class="nav-link font-color-change" href="contactUs.php">CONTACT US</a>
         </li>
       </ul>
     </div>
@@ -96,7 +96,7 @@
       </div>
     </div>
     <a class="nav-link site-main-name-font" href="#">NEWS</a>
-    <a class="nav-link site-main-name-font" href="#">CONTACT US</a>
+    <a class="nav-link site-main-name-font" href="contactUs.php">CONTACT US</a>
   </ul>
 
   <div class="social-icons mt-3 mb-4">

@@ -4,10 +4,10 @@ include 'navbar.php';
 // include 'slider.php';
 
 ?>
-<section class="container-fluid py-5 aboutUs-para">
+<section class="container-fluid py-5 aboutUs-para px-5">
   <div class="row align-items-center">
     <!-- Text Content -->
-    <div class="col-lg-6">
+    <div class="col-lg-6 m pe-5">
       <h1 class="custom-title text-dark">Who <span class="custom-highlight">We Are</span></h1>
       <p class="lead">Founded by doctors almost two decades ago, MACC Care has grown to become one of the UK’s
         leading providers of elderly care with a network of luxury care homes across the Midlands and exciting plans
@@ -26,7 +26,6 @@ include 'navbar.php';
   </div>
 </section>
 
-</section>
 <section>
 <div class="container-fluid " style="background-color:rgb(244, 239, 245)">
         <div class="row">
@@ -42,7 +41,7 @@ include 'navbar.php';
 <section>
     <div class="container-fluid text-center py-5 aboutUs-para" >
         <h2 class="fw-bold text-white">Harnessing technologies. Improving lives</h2>
-        <p class="mt-3" >Cutting-edge technologies are used throughout our homes to ensure the safety and wellbeing of every resident. 
+        <p class="mt-3 fs-5" >Cutting-edge technologies are used throughout our homes to ensure the safety and wellbeing of every resident. 
             From safety monitoring equipment to hand-held devices and electronic care plans, our teams are equipped to work efficiently, 
             effectively, and in residents’ best interests at all times.</p>
         

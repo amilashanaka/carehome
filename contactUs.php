@@ -31,7 +31,7 @@ include 'navbar.php';
       </div>
     </div>
   </div>
-
+</section>
 <?php
 include 'home_enquiry.php';
 include 'footer.php';
