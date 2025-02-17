@@ -9,14 +9,14 @@
       <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ps-2">
       <span class="site-main-name-font fs-3 custom-font lh-1">
         <div class="fs-1 site-main-name-font"><?= $setting->getSettings('f1')?></div>
-        <div class="fs-5 text-center site-sub-name-color"><?= $setting->getSettings('f2')?></div>
+        <div class="fs-1 text-center site-sub-name-color"><?= $setting->getSettings('f2')?></div>
       </span>
     </a>
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="#" id="home">HOME</a>
+          <a class="nav-link font-color-change" href="index.php" id="home">HOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link font-color-change" href="#" id="aboutUs">EVENTS</a>

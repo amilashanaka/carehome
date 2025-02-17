@@ -4,7 +4,7 @@ include 'navbar.php';
 // include 'slider.php';
 
 ?>
-<section class="container-fluid py-5 aboutUs-para px-5">
+<section class="container-fluid py-5 ps-5">
   <div class="row align-items-center">
     <!-- Text Content -->
     <div class="col-lg-6 m pe-5">

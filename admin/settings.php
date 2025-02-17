@@ -14,7 +14,7 @@ $form_config = [
         'f6' => ['label' => 'Address', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'f7' => ['label' => 'Facebook', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'f8' => ['label' => 'Twitter', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
-        'f9' => ['label' => 'Google Plus', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
+        'f9' => ['label' => 'Intragram', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'f10' => ['label' => 'Youtube', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'f11' => ['label' => 'Linkedin', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'f12' => ['label' => 'Address', 'type' => 'textarea', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],

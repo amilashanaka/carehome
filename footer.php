@@ -8,11 +8,11 @@
           <img src="assets/images/logo.png" alt="Logo">
           <span>NB CARE</span>
         </div>
-        <p class="mt-3">Copyright 2020 DesigningMedia.<br>All Rights Reserved</p>
+        <p class="mt-3">Copyright 2025 EtronicsSolutions<br>All Rights Reserved</p>
         <div class="social-icons mt-3">
-          <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" aria-label="Pinterest"><i class="bi bi-instagram"></i></a>
+        <a href="<?= $setting->getSettings('f7') ?>" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="<?= $setting->getSettings('f8') ?>" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+          <a href="<?= $setting->getSettings('f9') ?>" aria-label="Inragram"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
 
@@ -20,11 +20,11 @@
       <div class="col-lg-3 col-md-6">
         <h5>Useful Links</h5>
         <ul class="list-unstyled">
-          <li><a href="#">About Us</a></li>
+          <li><a href="aboutUs.php">About Us</a></li>
           <li><a href="#">Coming Soon</a></li>
           <li><a href="#">404 Page</a></li>
           <li><a href="#">FAQ Page</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="ContactUs.php">Contact Us</a></li>
         </ul>
       </div>
 
@@ -33,7 +33,7 @@
         <h5>Contact Info</h5>
         <div class="contact-info">
           <p><strong>Address:</strong><br>121 King Street, Melbourne,<br>3000, Australia</p>
-          <p><strong>Email:</strong><br><a href="<?= $setting->getSettings('f5') ?>"><?= $setting->getSettings('f5') ?></a></p>
+          <p><strong>Email:</strong><br><a href="<?= $setting->getSettings('f5') ?>"</a></p>
           <p><strong>Phone:</strong><br><?= $setting->getSettings('f4') ?></p>
         </div>
       </div>
