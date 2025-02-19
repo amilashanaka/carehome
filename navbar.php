@@ -68,7 +68,7 @@
 </div>
 <div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-50">
   <div class="d-flex justify-content-between align-items-center mb-4">
-    <h5 class="fw-bold site-main-name-font">NB CARE</h5>
+    <h5 class="fw-bold site-main-name-font">$setting->getSettings('f1')</h5>
     <button id="close-nav" class="btn btn-outline-secondary">
       <i class="fas fa-times"></i>
     </button>
