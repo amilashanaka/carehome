@@ -68,7 +68,6 @@ include 'navbar.php';
             </div>
         </div>
     </div>
-</body>
 </section>
 <?php
 include 'footer.php';

@@ -3,8 +3,8 @@ include_once './header.php';
 
 // Form Configuration
 $form_config = [
-    'heading' => 'Blogs',
-    'form_action' => 'data/register_blog.php',
+    'heading' => 'Events',
+    'form_action' => 'data/register_event.php',
     'inputs' => [
         'id' => ['type' => 'hidden', 'value' => ''],
         'f1' => ['label' => 'Title', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
@@ -15,11 +15,11 @@ $form_config = [
     ],
 ];
 
- 
+ blog
 
 // Fetch product data if an ID is provided
 $id = isset($_GET['id']) ? intval(base64_decode($_GET['id'])) : 0;
-$row = ($id > 0 && isset($blog)) ? $blog->get_by_id($id)['data'] : null;
+$row = ($id > 0 && isset($event)) ? $event->get_by_id($id)['data'] : null;
 
 include_once './navbar.php';
 include_once './sidebar.php';

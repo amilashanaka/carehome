@@ -11,8 +11,8 @@ include 'navbar.php';
       <h1 class="custom-title site-main-name-font">Contact <span class="custom-highlight">Us</span></h1>
       <div class="mt-4">
         <h3 class="fw-bold site-main-name-font">Head Office:</h3>
-        <p class="fs-4 site-main-name-font"><strong>Email:</strong> <a href="mailto:info@macccare.com" class="text-dark">info@macccare.com</a></p>
-        <p class="fs-4 site-main-name-font"><strong>General Enquiries:</strong> <a href="tel:01212710800" class="text-dark">0121 271 0800</a></p>
+        <p class="fs-4 site-main-name-font"><strong>Email:</strong> <a href="<?= $setting->getSettings('f5')?>" class="text-dark"><?= $setting->getSettings('f5')?></a></p>
+        <p class="fs-4 site-main-name-font"><strong>General Enquiries:</strong> <a href="<?= $setting->getSettings('f4')?>" class="text-dark"><?= $setting->getSettings('f4')?></a></p>
     </div>
     <p class="fst-italic text-muted px-3">
         No employee is authorised to conclude any binding agreement on behalf of Macc Group with another party by email/phone without express written confirmation from a Director.
