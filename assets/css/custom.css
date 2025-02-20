@@ -87,8 +87,7 @@
 .sub-menu {
   background-color: #efcaf7;
 }
-
-main-back-color {
+.main-bg {
   background-color: var(--main-color1);
 }
 
@@ -368,4 +367,12 @@ td {
 .page-item.active .page-link {
   background-color: #6c2eb9;
   color: white;
+}
+/* our care tab */
+.care-heading{
+  background-color:rgb(244, 216, 250);
+}
+.ourcare-para {
+  background-color: rgb(217, 247, 217);
+  color: #7a7979;
 }
