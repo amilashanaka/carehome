@@ -46,7 +46,7 @@
             OUR PEOPLE
           </a>
           <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">CAREERS</a></li>
+            <li><a class="dropdown-item" href="career">CAREERS</a></li>
           </ul>
         </li>
 

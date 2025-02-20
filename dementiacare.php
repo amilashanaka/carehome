@@ -74,19 +74,22 @@ include 'navbar.php';
         <a href="#" class="btn custom-btn btn-lg">Contact</a>
     </section>
     <section class="py-5 text-white w-100 main-bg"> <!-- Full width section with green background -->
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12"> <!-- Full width column without any padding -->
-                <div class="p-2 text-center"> <!-- Padding added for spacing -->
-                    <p class="lead fst-italic">
-                        “I can’t express how grateful we are for the wonderful care that my father has received at Riverside Care Home. The staff have been incredible, always going the extra mile to ensure his comfort and wellbeing. It truly feels like home here, and I know he’s in safe hands.”
-                    </p>
-                    <h5 class="text-end fw-bold mt-3">John D (Son of Resident)</h5>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12"> <!-- Full width column without any padding -->
+                    <div class="p-2 text-center"> <!-- Padding added for spacing -->
+                        <p class="lead fst-italic">
+                            “Mum has dementia and sight loss and during this time Willow Rose Care Home have made sure
+                            Mum is kept close to the family with her listening to our voices over the phone and voice
+                            messages we leave which are played back to her and explained. Mum’s room is a beautiful
+                            haven. Care of detail runs through the whole ethos of Willow Rose. We cannot recommend it
+                            highly enough.”
+                        </p>
+                        <h5 class="text-end fw-bold mt-3">Sarah HS (Daughter of Resident)</h5>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 </section>
 <?php include_once 'footer.php'; ?>
