@@ -5,7 +5,7 @@
       <div class="col-lg-7">
         <div class="section-title position-relative pb-3 mb-2">
           <h2 class="custom-heading">
-            Our <span class="custom-highlight">People</span>
+            Our <span class="custom-highlight">People</span></h2>
         </div>
         <p class="mb-4 fs-4 text-justify-content-wrapper">Our people – caring for the people that matter most in the world to you – really set NEW
           BEGINNINGS apart.

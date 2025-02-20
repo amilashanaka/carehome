@@ -87,8 +87,7 @@
 .sub-menu {
   background-color: #efcaf7;
 }
-
-main-back-color {
+.main-bg {
   background-color: var(--main-color1);
 }
 
@@ -166,11 +165,10 @@ main-back-color {
   background-color: var(--main-color1);
   border: none;
   color: white;
-  border-radius: 30px;
+  border-radius: 5px;
   /* Rounded edges */
   padding: 10px 20px;
 }
-
 .custom-btn:hover {
   background-color: var(--main-color1);
 }
@@ -218,14 +216,6 @@ main-back-color {
 .feature-icon img {
   width: 40px;
   height: 40px;
-}
-
-.custom-btn {
-  background-color: var(--main-color1);
-  border: none;
-  color: white;
-  border-radius: 5PX;
-  padding: 10px 20px;
 }
 
 /* event table */
@@ -316,6 +306,73 @@ td {
 }
 
 .aboutUs-para {
-  background-color: rgb(196, 248, 196);
-  color: rgb(208, 92, 243);
+  background-color: rgb(143, 240, 143);
+  color: #000;
+}
+/* ourHome page css */
+.care-home-card {
+  text-align: center;
+  padding: 20px;
+}
+.care-home-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.care-home-card h5 {
+  margin-top: 15px;
+  font-weight: bold;
+  color:var(--main-color1);
+}
+.care-home-card p {
+  color:var(--main-color2);
+  margin-bottom: 10px;
+}
+
+/* news page css */
+.card-link {
+  text-decoration: none !important;  /* No underline at any time */
+  color: #6c2eb9;  /* Default text color */
+  font-weight: bold;  /* Optional: makes title bold */
+  transition: color 0.3s ease-in-out;
+}
+
+.card-link:hover {
+  color: #9a42d0;  /* Slightly lighter shade on hover */
+  text-decoration: none !important;  /* Ensures underline never appears */
+}
+/* pagination */
+.page-link {
+  width: 45px; /* Circle size */
+  height: 45px;
+  display: flex;
+  align-items: center;  /* Vertically center */
+  justify-content: center;  /* Horizontally center */
+  text-align: center;
+  border-radius: 50% !important;  /* Perfect circle */
+  margin: 0 10px; /* Spacing between buttons */
+  color: #6c2eb9;
+  font-weight: bold;
+  font-size: 18px; /* Bigger number */
+  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid #6c2eb9; /* Optional: Clean border */
+}
+
+.page-link:hover {
+  background-color: #6c2eb9;
+  color: white;
+}
+
+.page-item.active .page-link {
+  background-color: #6c2eb9;
+  color: white;
+}
+/* our care tab */
+.care-heading{
+  background-color:rgb(244, 216, 250);
+}
+.ourcare-para {
+  background-color: rgb(217, 247, 217);
+  color: #7a7979;
 }

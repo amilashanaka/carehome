@@ -3,16 +3,16 @@ include_once './header.php';
 include_once '../controllers/index.php';
 
 $form_config = [
-    'heading' => 'Blog List',
+    'heading' => 'Event List',
     'title' => 'list',
-    'new' => 'blog',
+    'new' => 'event',
     'table' => ['th' => ['Application_Name', 'Description','Action']],
     'tbl' => 'courses',
     'redirect' => 'application_list',
 
 ];
 
-$list = $blog->get_all()['error'] === null ? $blog->get_all()['data'] : null;
+$list = $event->get_all()['error'] === null ? $event->get_all()['data'] : null;
 ?>
 
 <?php include_once './navbar.php'; ?>

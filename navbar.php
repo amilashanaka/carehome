@@ -8,24 +8,24 @@
     <a class="navbar-brand fw-bold align-items-center d-flex" href="#">
       <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ps-2">
       <span class="site-main-name-font fs-3 custom-font lh-1">
-        <div class="fs-1 site-main-name-font"><?= $setting->getSettings('f1')?></div>
-        <div class="fs-5 text-center site-sub-name-color"><?= $setting->getSettings('f2')?></div>
+        <div class="fs-3 site-main-name-font"><?= $setting->getSettings('f1')?></div>
+        <div class="fs-3 text-center site-sub-name-color"><?= $setting->getSettings('f2')?></div>
       </span>
     </a>
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="#" id="home">HOME</a>
+          <a class="nav-link font-color-change" href="index" id="home">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="#" id="aboutUs">EVENTS</a>
+          <a class="nav-link font-color-change" href="events" id="aboutus">EVENTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="aboutUs.php" id="aboutUs">ABOUT US</a>
+          <a class="nav-link font-color-change" href="aboutus" id="aboutUs">ABOUT US</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="#">OUR HOMES</a>
+          <a class="nav-link font-color-change" href="ourhomes">OUR HOMES</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle font-color-change" href="#" id="navbarDropdownMenuLink" role="button"
@@ -33,10 +33,10 @@
             OUR CARE
           </a>
           <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">NURSING CARE</a></li>
-            <li><a class="dropdown-item" href="#">DEMENTIA CARE</a></li>
-            <li><a class="dropdown-item" href="#">RESIDENTIAL CARE</a></li>
-            <li><a class="dropdown-item" href="#">RESPITE CARE</a></li>
+            <li><a class="dropdown-item" href="nursing">NURSING CARE</a></li>
+            <li><a class="dropdown-item" href="dementiacare">DEMENTIA CARE</a></li>
+            <li><a class="dropdown-item" href="residentialcare">RESIDENTIAL CARE</a></li>
+            <li><a class="dropdown-item" href="respite">RESPITE CARE</a></li>
           </ul>
         </li>
 
@@ -46,12 +46,12 @@
             OUR PEOPLE
           </a>
           <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">CAREERS</a></li>
+            <li><a class="dropdown-item" href="career">CAREERS</a></li>
           </ul>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="#">NEWS</a>
+          <a class="nav-link font-color-change" href="news.php">NEWS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link font-color-change" href="contactUs.php">CONTACT US</a>
