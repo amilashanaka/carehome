@@ -44,13 +44,40 @@
 }
 
 #overlay {
-  display: none;
-  z-index: 1040;
+  /* display: none;
+  z-index: 1040; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px); /* Apply blur effect */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 998; /* Below the navigation */
 
 }
 
 #overlay.active {
   display: block;
+}
+#menu {
+  transform: translateX(-100%); /* Hidden off-screen */
+  transition: transform 0.3s ease-in-out;
+  z-index: 999; /* Above overlay */
+}
+
+/* When #menu is targeted (opened via <a href="#menu">), show it */
+#menu:target {
+  transform: translateX(0); /* Slide into view */
+}
+
+/* Apply blur effect when #menu is open */
+#menu:target ~ #overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 

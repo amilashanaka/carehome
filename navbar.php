@@ -9,7 +9,7 @@
       <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ps-2">
       <span class="site-main-name-font fs-3 custom-font lh-1">
         <div class="fs-3 site-main-name-font"><?= $setting->getSettings('f1')?></div>
-        <div class="fs-3 text-center site-sub-name-color"><?= $setting->getSettings('f2')?></div>
+        <div class="fs-3 site-sub-name-color"><?= $setting->getSettings('f2')?></div>
       </span>
     </a>
 
@@ -51,10 +51,10 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="news.php">NEWS</a>
+          <a class="nav-link font-color-change" href="news">NEWS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-color-change" href="contactUs.php">CONTACT US</a>
+          <a class="nav-link font-color-change" href="contactUs">CONTACT US</a>
         </li>
       </ul>
     </div>
@@ -74,35 +74,35 @@
     </button>
   </div>
   <ul class="nav flex-column ">
-    <a class="nav-link site-main-name-font" href="#">HOME</a>
-    <a class="nav-link site-main-name-font " href="#">EVENTS</a>
-    <a class="nav-link site-main-name-font" href="aboutUs.php">ABOUT US</a>
-    <a class="nav-link site-main-name-font" href="#">OUR HOMES</a>
+    <a class="nav-link site-main-name-font" href="index">HOME</a>
+    <a class="nav-link site-main-name-font " href="events">EVENTS</a>
+    <a class="nav-link site-main-name-font" href="aboutUs">ABOUT US</a>
+    <a class="nav-link site-main-name-font" href="ourhomes">OUR HOMES</a>
     <div>
       <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#careSubmenu">OUR
         CARE</a>
       <div id="careSubmenu" class="collapse ps-3">
-        <a class="nav-link site-sub-name-color" href="#">NURSING CARE</a>
-        <a class="nav-link site-sub-name-color" href="#">DEMENTIA CARE</a>
-        <a class="nav-link site-sub-name-color" href="#">RESIDENTIAL CARE</a>
-        <a class="nav-link site-sub-name-color" href="#">RESPITE CARE</a>
+        <a class="nav-link site-sub-name-color" href="nursing">NURSING CARE</a>
+        <a class="nav-link site-sub-name-color" href="dementiacare">DEMENTIA CARE</a>
+        <a class="nav-link site-sub-name-color" href="residentialcare">RESIDENTIAL CARE</a>
+        <a class="nav-link site-sub-name-color" href="respite">RESPITE CARE</a>
       </div>
     </div>
     <div>
       <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#peopleSubmenu">OUR
         PEOPLE</a>
       <div id="peopleSubmenu" class="collapse ps-3">
-        <a class="nav-link site-sub-name-color" href="#">CAREERS</a>
+        <a class="nav-link site-sub-name-color" href="career">CAREERS</a>
       </div>
     </div>
-    <a class="nav-link site-main-name-font" href="#">NEWS</a>
-    <a class="nav-link site-main-name-font" href="contactUs.php">CONTACT US</a>
+    <a class="nav-link site-main-name-font" href="news">NEWS</a>
+    <a class="nav-link site-main-name-font" href="contactUs">CONTACT US</a>
   </ul>
 
   <div class="social-icons mt-3 mb-4">
-    <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-    <a href="#" aria-label="Intragram"><i class="bi bi-instagram"></i></a>
+    <a href="<?= $setting->getSettings('f8')?>" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="<?= $setting->getSettings('f7')?>" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a href="<?= $setting->getSettings('f9')?>" aria-label="Intragram"><i class="bi bi-instagram"></i></a>
   </div>
 
   <div class="d-flex mb-4">
