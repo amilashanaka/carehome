@@ -6,13 +6,13 @@ $form_config = [
     'heading' => 'Event List',
     'title' => 'list',
     'new' => 'event',
-    'table' => ['th' => ['Application_Name', 'Description','Action']],
-    'tbl' => 'courses',
-    'redirect' => 'application_list',
-
+    'table' => ['th' => ['Title', 'Sub Title', 'Action']],
+    'tbl' => 'events', // Assuming 'events' is the table for storing event data
+    'redirect' => 'event_list',
 ];
 
-$list = $event->get_all()['error'] === null ? $event->get_all()['data'] : null;
+// Fetch all event records
+$list = isset($event) && $event->get_all()['error'] === null ? $event->get_all()['data'] : null;
 ?>
 
 <?php include_once './navbar.php'; ?>
@@ -22,7 +22,8 @@ $list = $event->get_all()['error'] === null ? $event->get_all()['data'] : null;
     <?php
         $heading = $form_config['heading'];
         $page_title = $form_config['title'];  
-        include_once './page_header.php'; ?>
+        include_once './page_header.php'; 
+    ?>
 
     <section class="content">
         <div class="row">
@@ -64,9 +65,6 @@ $list = $event->get_all()['error'] === null ? $event->get_all()['data'] : null;
                                             <td><?= $i++; ?></td>
                                             <td><a href="<?= $form_config['new'] ?>?id=<?= base64_encode($row['id']); ?>"><?= $row['f1'] ?></a></td>
                                             <td><?= $row['f2'] ?></td>
-
-
-
 
                                             <td>
                                                 <?php if ($row['status'] == '1') { ?>

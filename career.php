@@ -54,9 +54,9 @@ include 'navbar.php';
     </div>
 </section>
 <section class="py-5 main-bg w-100">
-    <div class="container text-center">
+    <div class="container text-center w-100 main-bg">
         <!-- Testimonial Carousel -->
-        <div id="testimonialCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div id="testimonialCarousel" class="carousel slide mt-4 " data-bs-ride="carousel">
             <!-- Carousel Inner -->
             <div class="carousel-inner" style="height: 300px; overflow: hidden;">
 
@@ -67,7 +67,9 @@ include 'navbar.php';
                             <span class="text-purple fs-1"><i class="bi bi-quote"></i></span>
                         </div>
                         <p class="text-center fs-5 mb-4 flex-grow-1 w-90">
-                            “At Riverside Care Home, we pride ourselves on providing personalized care tailored to each resident’s needs. Our team goes above and beyond to ensure the comfort and wellbeing of everyone in our care.”
+                            “At Riverside Care Home, we pride ourselves on providing personalized care tailored to each
+                            resident’s needs. Our team goes above and beyond to ensure the comfort and wellbeing of
+                            everyone in our care.”
                         </p>
                         <h5 class="mb-0">Jane Doe</h5>
                         <small class="text-muted">Manager, Riverside Care Home</small>
@@ -81,7 +83,9 @@ include 'navbar.php';
                             <span class="text-purple fs-1"><i class="bi bi-quote"></i></span>
                         </div>
                         <p class="text-muted fs-5 mb-4 flex-grow-1">
-                            “Our residents are at the heart of everything we do. We aim to provide a nurturing environment where they feel like part of the family. I’m incredibly proud of our dedicated team.”
+                            “Our residents are at the heart of everything we do. We aim to provide a nurturing
+                            environment where they feel like part of the family. I’m incredibly proud of our dedicated
+                            team.”
                         </p>
                         <h5 class="mb-0">Emily White</h5>
                         <small class="text-muted">Manager, Willow Rose Care Home</small>
@@ -95,7 +99,9 @@ include 'navbar.php';
                             <span class="text-purple fs-1"><i class="bi bi-quote"></i></span>
                         </div>
                         <p class="text-muted fs-5 mb-4 flex-grow-1">
-                            “At Willowbrook Care Home, we focus on providing a warm, safe environment for each resident. The bond between our residents and staff is something truly special. It’s an honor to be part of their journey.”
+                            “At Willowbrook Care Home, we focus on providing a warm, safe environment for each resident.
+                            The bond between our residents and staff is something truly special. It’s an honor to be
+                            part of their journey.”
                         </p>
                         <h5 class="mb-0">Samuel Harris</h5>
                         <small class="text-muted">Manager, Willowbrook Care Home</small>
@@ -109,7 +115,9 @@ include 'navbar.php';
                             <span class="text-purple fs-1"><i class="bi bi-quote"></i></span>
                         </div>
                         <p class="text-muted fs-5 mb-4">
-                            “I am incredibly proud of the care we provide at Oak Tree Care Home. Every resident is treated with the utmost respect and dignity. It is our mission to provide a home-like atmosphere and high-quality care.”
+                            “I am incredibly proud of the care we provide at Oak Tree Care Home. Every resident is
+                            treated with the utmost respect and dignity. It is our mission to provide a home-like
+                            atmosphere and high-quality care.”
                         </p>
                         <h5 class="mb-0">Sophia Lee</h5>
                         <small class="text-muted">Manager, Oak Tree Care Home</small>
@@ -123,7 +131,9 @@ include 'navbar.php';
                             <span class="text-purple fs-1"><i class="bi bi-quote"></i></span>
                         </div>
                         <p class="text-muted fs-5 mb-4">
-                            “Each day is an opportunity for us to make a difference in the lives of our residents. At Greenfield Care Home, we strive to ensure our residents are happy, healthy, and safe at all times.”
+                            “Each day is an opportunity for us to make a difference in the lives of our residents. At
+                            Greenfield Care Home, we strive to ensure our residents are happy, healthy, and safe at all
+                            times.”
                         </p>
                         <h5 class="mb-0">Liam Turner</h5>
                         <small class="text-muted">Manager, Greenfield Care Home</small>
@@ -132,11 +142,13 @@ include 'navbar.php';
             </div>
 
             <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon bg-success rounded-circle" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon bg-success rounded-circle" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>

@@ -2,16 +2,22 @@
 // Class AutoLoader implements
 declare(strict_types=1);
 spl_autoload_register(function ($class) {
-    include_once  __DIR__ . "/$class.php";
+    $file = __DIR__ . "/$class.php";
+    if (file_exists($file)) {
+        include_once $file;
+    } else {
+        die("Error: Class file '$file' not found!"); // Debugging message
+    }
 });
 require_once "config.php";
-// Db instant
+
+// Database instance
 $database = new Database(DB_HOST, DB_NAME, DB_USER, DB_PASS);
-// Controllers intialized
+
+// Controllers initialized
 $auth = new AuthController($database);
 $user = new UserController($database);
 $admin = new AdminController($database);
-$blog = new BlogController($database);
 $testimonial = new TestimonialController($database);
 // $log = new LogController($database);
 $signals = new SignalController($database);
@@ -26,12 +32,14 @@ $news = new NewsController($database);
 $faq = new FaqController($database);
 $gallery = new GalleryController($database);
 
-// Db controller 
+// Event Management
+$event = new EventController($database);  // Event management added
+
+// Database controller
 $db = new DbController($database);
 
-
-
-function dd($res){
-var_dump($res);
-exit;
+// Debugging function
+function dd($res) {
+    var_dump($res);
+    exit;
 }

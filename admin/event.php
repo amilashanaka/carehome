@@ -11,13 +11,10 @@ $form_config = [
         'f2' => ['label' => 'Sub Title 1', 'type' => 'text', 'class' => 'form-control', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'f5' => ['label' => 'Content 1', 'type' => 'textarea', 'class' => 'form-control summernote', 'div_class' => 'col-lg-12 col-md-12 form-group'],
         'img1' => ['label' => 'Upload Image 1', 'type' => 'file', 'accept' => 'image/*', 'preview' => true, 'div_class' => 'col-lg-4 col-md-4 form-group']
-    
     ],
 ];
 
-
-
-// Fetch product data if an ID is provided
+// Fetch event data if an ID is provided
 $id = isset($_GET['id']) ? intval(base64_decode($_GET['id'])) : 0;
 $row = ($id > 0 && isset($event)) ? $event->get_by_id($id)['data'] : null;
 
@@ -74,5 +71,4 @@ include_once './sidebar.php';
     previewImage(formConfig);
 </script>
 </body>
-
 </html>
