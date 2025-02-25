@@ -520,10 +520,10 @@ $sample_page_elements = array(
 
 $sys = array();
 
-$sys['APP_NAME']              = 'Sky inside UK Limited';
-$sys['APP_F_NAME']            = 'SKY';
-$sys['APP_L_NAME']            = 'INSIDE';
-$sys['System Name']           = 'SKY Admin';
+$sys['APP_NAME']              = 'New Beginnings Bristol Limited';
+$sys['APP_F_NAME']            = 'NEW BEGINNINGS';
+$sys['APP_L_NAME']            = 'BRISTOL LIMITED';
+$sys['System Name']           = 'New Beginnigns Admin';
 $sys['System Section']        = 'Care Home Management System Admin';
 $sys['SYSTEM']                = 'ADMINISTRATION PLATFORM';
 $sys['LOGIN']                 = 'LOGIN';
