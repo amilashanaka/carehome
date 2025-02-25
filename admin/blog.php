@@ -15,7 +15,7 @@ $form_config = [
     ],
 ];
 
- blog
+
 
 // Fetch product data if an ID is provided
 $id = isset($_GET['id']) ? intval(base64_decode($_GET['id'])) : 0;
