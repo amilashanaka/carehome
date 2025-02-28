@@ -66,7 +66,7 @@
 <div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-opacity-10">
   
 </div>
-<div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-50">
+<div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-75">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h5 class="fw-bold site-main-name-font">NB CARE</h5>
     <button id="close-nav" class="btn btn-outline-secondary">

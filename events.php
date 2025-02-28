@@ -1,70 +1,112 @@
 <?php
 include 'header.php';
 include 'navbar.php';
+
 ?>
-<section>
-<div class="container text-center mt-5">
-<h2 class="custom-heading">
-Our <span class="custom-highlight">Homes</span></h2>
-    <div class="row">
-        <!-- First Care Home -->
-        <div class="col-md-4 mb-4">
-            <div class="care-home-card">
-                <img src="assets/images/home1.jpg" alt="Wyrley Rose">
-                <h5>Wyrley Rose</h5>
-                <p>Longbridge</p>
-                <button class="btn custom-btn">Find Out More</button>
+
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="custom-heading">
+            All the Events of <span class="custom-highlight">New Beginnings</span>
+        </h2>
+
+        <div class="row mt-5 g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card feature-card h-100 shadow">
+                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
+                        </h4>
+                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
+                            recover from severe floods by gathering donations...</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Second Care Home -->
-        <div class="col-md-4 mb-4">
-            <div class="care-home-card">
-                <img src="assets/images/home2.jpg" alt="Leighton Rose">
-                <h5>Leighton Rose</h5>
-                <p>Leighton Buzzard</p>
-                <button class="btn custom-btn">Find Out More</button>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card feature-card h-100 shadow">
+                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
+                        </h4>
+                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
+                            recover from severe floods by gathering donations...</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Third Care Home -->
-        <div class="col-md-4 mb-4">
-            <div class="care-home-card">
-                <img src="assets/images/home3.jpg" alt="Watermead Rose">
-                <h5>Watermead Rose</h5>
-                <p>Leicester</p>
-                <button class="btn custom-btn">Find Out More</button>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card feature-card h-100 shadow">
+                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
+                        </h4>
+                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
+                            recover from severe floods by gathering donations...</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Fourth Care Home -->
-        <div class="col-md-4 mb-4">
-            <div class="care-home-card">
-                <img src="assets/images/home4.jpg" alt="Elmwood Rose">
-                <h5>Elmwood Rose</h5>
-                <p>Birmingham</p>
-                <button class="btn custom-btn">Find Out More</button>
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card feature-card h-100 shadow">
+                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
+                        </h4>
+                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
+                            recover from severe floods by gathering donations...</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Fifth Care Home -->
-        <div class="col-md-4 mb-4">
-            <div class="care-home-card">
-                <img src="assets/images/home5.jpg" alt="Maple Rose">
-                <h5>Maple Rose</h5>
-                <p>Nottingham</p>
-                <button class="btn custom-btn">Find Out More</button>
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card feature-card h-100 shadow">
+                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
+                        </h4>
+                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
+                            recover from severe floods by gathering donations...</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Sixth Care Home -->
-        <div class="col-md-4 mb-4">
-            <div class="care-home-card">
-                <img src="assets/images/home6.jpg" alt="Oakwood Rose">
-                <h5>Oakwood Rose</h5>
-                <p>Manchester</p>
-                <button class="btn custom-btn">Find Out More</button>
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card feature-card h-100 shadow">
+                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
+                        </h4>
+                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
+                            recover from severe floods by gathering donations...</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+   <!-- Pagination Section -->
+<nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center mt-5">
+    <li class="page-item"><a class="page-link" href="page1.php">1</a></li>
+    <li class="page-item"><a class="page-link" href="page2.php">2</a></li>
+    <li class="page-item"><a class="page-link" href="page3.php">3</a></li>
+    <li class="page-item"><a class="page-link" href="page4.php">4</a></li>
+  </ul>
+</nav>
+
 </section>
-<section>
-<img src="assets/images/ourhomes.jpg" class=" w-100 object-fit: cover ">
-</section>
+
 <?php include_once 'footer.php'; ?>

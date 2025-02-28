@@ -216,11 +216,11 @@
   border: 2px solid var(--main-color2);
   border-radius: 15px;
   padding: 20px;
-  text-align: center;
   height: 100%;
   justify-content: space-between;
   flex-direction: column;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  object-fit: cover;
 }
 
 .feature-card:hover {
@@ -244,7 +244,13 @@
   width: 40px;
   height: 40px;
 }
-
+/* news cards */
+.card-img-top {
+  width: 100%; /* Ensures the image stretches to fit the card width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
 /* event table */
 .event-table {
   background-image: url('../images/tableB.png');

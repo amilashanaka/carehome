@@ -9,7 +9,7 @@ include 'navbar.php';
     <!-- Text Content -->
     <div class="col-lg-6 m pe-5">
       <h1 class="custom-title text-dark">Who <span class="custom-highlight">We Are</span></h1>
-      <p class="lead">Founded by doctors almost two decades ago, MACC Care has grown to become one of the UK’s
+      <p class="lead">Founded by doctors almost two decades ago, New has grown to become one of the UK’s
         leading providers of elderly care with a network of luxury care homes across the Midlands and exciting plans
         to extend our philosophy of care further afield, with new homes opening in Leicestershire and Buckinghamshire.
         We create bespoke developments that address elderly nursing, dementia and residential care needs and are proud
