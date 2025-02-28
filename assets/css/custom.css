@@ -44,13 +44,40 @@
 }
 
 #overlay {
-  display: none;
-  z-index: 1040;
+  /* display: none;
+  z-index: 1040; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px) !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  z-index: 998; /* Below the navigation */
 
 }
 
 #overlay.active {
   display: block;
+}
+#menu {
+  transform: translateX(-100%); /* Hidden off-screen */
+  transition: transform 0.3s ease-in-out;
+  z-index: 999; /* Above overlay */
+}
+
+/* When #menu is targeted (opened via <a href="#menu">), show it */
+#menu:target {
+  transform: translateX(0); /* Slide into view */
+}
+
+/* Apply blur effect when #menu is open */
+#menu:target ~ #overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
 
@@ -189,11 +216,11 @@
   border: 2px solid var(--main-color2);
   border-radius: 15px;
   padding: 20px;
-  text-align: center;
   height: 100%;
   justify-content: space-between;
   flex-direction: column;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  object-fit: cover;
 }
 
 .feature-card:hover {
@@ -217,7 +244,13 @@
   width: 40px;
   height: 40px;
 }
-
+/* news cards */
+.card-img-top {
+  width: 100%; /* Ensures the image stretches to fit the card width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
 /* event table */
 .event-table {
   background-image: url('../images/tableB.png');
