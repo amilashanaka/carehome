@@ -2,111 +2,67 @@
 include 'header.php';
 include 'navbar.php';
 
+// Fetch all events from the database
+$eventData = $event->get_all();
+$events = $eventData['error'] === null ? array_reverse($eventData['data']) : [];
+
+// Pagination settings
+$eventsPerPage = 6; // Show only 6 events per page
+$totalEvents = count($events);
+$totalPages = ceil($totalEvents / $eventsPerPage);
+
+// Get current page from URL, default to page 1
+$currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$currentPage = max(1, min($currentPage, $totalPages)); // Ensure valid page number
+
+// Get the subset of events for the current page
+$startIndex = ($currentPage - 1) * $eventsPerPage;
+$eventsToShow = array_slice($events, $startIndex, $eventsPerPage);
 ?>
 
 <section class="py-5">
-    <div class="container text-center">
-        <h2 class="custom-heading">
-            All the Events of <span class="custom-highlight">New Beginnings</span>
+    <div class="container">
+        <h2 class="custom-heading text-center">
+            All Upcoming Events
         </h2>
 
         <div class="row mt-5 g-4">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-                <div class="card feature-card h-100 shadow">
-                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
-                        </h4>
-                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
-                            recover from severe floods by gathering donations...</p>
+            <?php foreach ($eventsToShow as $key) { ?>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 shadow">
+                        <img src="<?= $key['img1'] ?>" class="card-img-top" alt="Event">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                                <a href="event_detail.php?id=<?= $key['id'] ?>" class="card-link"><?= $key['f1'] ?></a>
+                            </h4>
+                            <p class="text-justify"><?= $key['f5'] ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-4">
-                <div class="card feature-card h-100 shadow">
-                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
-                        </h4>
-                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
-                            recover from severe floods by gathering donations...</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-md-4">
-                <div class="card feature-card h-100 shadow">
-                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
-                        </h4>
-                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
-                            recover from severe floods by gathering donations...</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-md-4">
-                <div class="card feature-card h-100 shadow">
-                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
-                        </h4>
-                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
-                            recover from severe floods by gathering donations...</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-md-4">
-                <div class="card feature-card h-100 shadow">
-                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
-                        </h4>
-                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
-                            recover from severe floods by gathering donations...</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-md-4">
-                <div class="card feature-card h-100 shadow">
-                    <img src="assets/images/n1.jpg" class="card-img-top" alt="Supporting a Family in Need">
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="news1.php" class="card-link">Supporting a Family in Need</a>
-                        </h4>
-                        <p class="card-text">Watermead Rose care home in Leicester recently helped a local family
-                            recover from severe floods by gathering donations...</p>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 
    <!-- Pagination Section -->
-<nav aria-label="Page navigation">
-  <ul class="pagination justify-content-center mt-5">
-    <li class="page-item"><a class="page-link" href="page1.php">1</a></li>
-    <li class="page-item"><a class="page-link" href="page2.php">2</a></li>
-    <li class="page-item"><a class="page-link" href="page3.php">3</a></li>
-    <li class="page-item"><a class="page-link" href="page4.php">4</a></li>
-  </ul>
-</nav>
+   <?php if ($totalPages > 1) { ?>
+   <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center mt-5">
+        <?php if ($currentPage > 1) { ?>
+            <li class="page-item"><a class="page-link" href="?page=<?= $currentPage - 1 ?>"><</a></li>
+        <?php } ?>
 
+        <?php for ($i = 1; $i <= $totalPages; $i++) { ?>
+            <li class="page-item <?= ($i == $currentPage) ? 'active' : '' ?>">
+                <a class="page-link" href="?page=<?= $i ?>"><?= $i ?></a>
+            </li>
+        <?php } ?>
+
+        <?php if ($currentPage < $totalPages) { ?>
+            <li class="page-item"><a class="page-link" href="?page=<?= $currentPage + 1 ?>">></a></li>
+        <?php } ?>
+      </ul>
+   </nav>
+   <?php } ?>
 </section>
 
 <?php include_once 'footer.php'; ?>

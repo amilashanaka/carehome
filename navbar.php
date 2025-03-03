@@ -63,10 +63,9 @@
 
 <!-- Mobile Navigation -->
 <!-- Overlay with Blur Effect -->
-<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50" style="backdrop-filter: blur(50px);"></div>
+<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50" ></div>
 
-<!-- Mobile Navigation -->
-<div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-75">
+<div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-75 ">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h5 class="fw-bold site-main-name-font">NB CARE</h5>
     <button id="close-nav" class="btn btn-outline-secondary">
@@ -75,57 +74,57 @@
   </div>
 
   <ul class="nav flex-column">
-    <a class="nav-link site-main-name-font" href="index">
-      <i class="bi bi-house-door me-2"></i> HOME
+    <a class="nav-link site-main-name-font text-decoration-underline" href="index">
+      <i class="bi bi-house-door me-2"></i>HOME
     </a>
-    <a class="nav-link site-main-name-font" href="events">
-      <i class="bi bi-calendar-event me-2"></i> EVENTS
+    <a class="nav-link site-main-name-font text-decoration-underline" href="events">
+      <i class="bi bi-calendar-event me-2"></i>EVENTS
     </a>
-    <a class="nav-link site-main-name-font" href="aboutUs">
-      <i class="bi bi-info-circle me-2"></i> ABOUT US
+    <a class="nav-link site-main-name-font text-decoration-underline" href="aboutUs">
+      <i class="bi bi-info-circle me-2"></i>ABOUT US
     </a>
-    <a class="nav-link site-main-name-font" href="ourhomes">
-      <i class="bi bi-building me-2"></i> OUR HOMES
+    <a class="nav-link site-main-name-font text-decoration-underline" href="ourhomes">
+      <i class="bi bi-building me-2"></i>OUR HOMES
     </a>
 
     <!-- Our Care Submenu -->
     <div>
-      <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#careSubmenu">
-        <i class="bi bi-heart-pulse me-2"></i> OUR CARE
+      <a class="nav-link site-main-name-font text-decoration-underline" href="#" data-bs-toggle="collapse" data-bs-target="#careSubmenu">
+        <i class="bi bi-heart-pulse me-2"></i>OUR CARE
       </a>
       <div id="careSubmenu" class="collapse ps-3">
-        <a class="nav-link site-sub-name-color" href="nursing">
-          <i class="bi bi-plus-circle me-2"></i> NURSING CARE
+        <a class="nav-link site-sub-name-color text-decoration-underline" href="nursing">
+          <i class="bi bi-plus-circle me-2"></i>NURSING CARE
         </a>
-        <a class="nav-link site-sub-name-color" href="dementiacare">
-          <i class="bi bi-brain me-2"></i> DEMENTIA CARE
+        <a class="nav-link site-sub-name-color text-decoration-underline" href="dementiacare">
+          <i class="bi bi-person-hearts me-2"></i>DEMENTIA CARE
         </a>
-        <a class="nav-link site-sub-name-color" href="residentialcare">
-          <i class="bi bi-house-heart me-2"></i> RESIDENTIAL CARE
+        <a class="nav-link site-sub-name-color text-decoration-underline" href="residentialcare">
+          <i class="bi bi-house-heart me-2"></i>RESIDENTIAL CARE
         </a>
-        <a class="nav-link site-sub-name-color" href="respite">
-          <i class="bi bi-clock-history me-2"></i> RESPITE CARE
+        <a class="nav-link site-sub-name-color text-decoration-underline" href="respite">
+          <i class="bi bi-clock-history me-2"></i>RESPITE CARE
         </a>
       </div>
     </div>
 
     <!-- Our People Submenu -->
     <div>
-      <a class="nav-link site-main-name-font" href="#" data-bs-toggle="collapse" data-bs-target="#peopleSubmenu">
-        <i class="bi bi-people me-2"></i> OUR PEOPLE
+      <a class="nav-link site-main-name-font text-decoration-underline" href="#" data-bs-toggle="collapse" data-bs-target="#peopleSubmenu">
+        <i class="bi bi-people me-2"></i>OUR PEOPLE
       </a>
       <div id="peopleSubmenu" class="collapse ps-3">
-        <a class="nav-link site-sub-name-color" href="career">
-          <i class="bi bi-briefcase me-2"></i> CAREERS
+        <a class="nav-link site-sub-name-color text-decoration-underline" href="career">
+          <i class="bi bi-briefcase me-2"></i>CAREERS
         </a>
       </div>
     </div>
 
-    <a class="nav-link site-main-name-font" href="news">
-      <i class="bi bi-newspaper me-2"></i> NEWS
+    <a class="nav-link site-main-name-font text-decoration-underline" href="news">
+      <i class="bi bi-newspaper me-2"></i>NEWS
     </a>
-    <a class="nav-link site-main-name-font" href="contactUs">
-      <i class="bi bi-envelope me-2"></i> CONTACT US
+    <a class="nav-link site-main-name-font text-decoration-underline" href="contactUs">
+      <i class="bi bi-envelope me-2"></i>CONTACT US
     </a>
   </ul>
 
