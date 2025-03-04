@@ -4,9 +4,9 @@ include_once './../../controllers/index.php';
 include_once '../../inc/functions.php';
 
 // Set target directory and page name
-$target_dir = "../../uploads/blogs/";
-$targ_front = "./uploads/blogs/";
-$page = 'blog';
+$target_dir = "../../uploads/events/";
+$targ_front = "./uploads/events/";
+$page = 'event';
 
 // Dynamically define keys to process from $_POST
 $wanted_keys = array_keys($_POST);
@@ -40,19 +40,15 @@ foreach ($image_keys as $key) {
 // Determine operation (Update or Register)
 $is_update = $data['id'] > 0;
 
-
 if ($is_update) {
-
     $data['updated_date'] = $timestamp;
-    $result = $blog->update($data);
+    $result = $event->update($data);
 } else {
-
     $data['created_date'] = $timestamp;
-    $result = $blog->register($data);
+    $result = $event->register($data);
 }
 
 // Redirect to appropriate page based on the operation and result
 $redirect_url = redirect_page($is_update, $result, $data['id'], $page);
 
 header("Location: $redirect_url");
-
