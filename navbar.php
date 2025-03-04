@@ -15,11 +15,11 @@ $letters = mb_str_split($siteMainName); // Split into an array of letters
       <i class="fas fa-bars"></i>
     </button>
     <a class="navbar-brand fw-bold align-items-center d-flex" href="#">
-      <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ps-2">
-      <div class="site-title-wrapper">
+      
+      <div class="site-title-wrapper border p-2 border-2 bg-info">
         <div class="site-title">
           <?php foreach ($letters as $index => $letter) { ?>
-            <span style="color: <?= $letterColors[$index % count($letterColors)]; ?>;">
+            <span class="text-shadow" style="color: <?= $letterColors[$index % count($letterColors)]; ?>;">
               <?= htmlspecialchars($letter); ?>
             </span>
           <?php } ?>
