@@ -4,7 +4,36 @@
   ;
   --social-media-strip: rgb(17, 146, 238)
 }
+/* main nav */
+.site-title-wrapper {
+  display: inline-block;
+  text-align: left;
+}
 
+.site-title {
+  display: inline-flex;
+  font-family: 'Fredoka', 'Poppins', sans-serif; 
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.site-title span {
+  display: inline-block;
+  line-height: 1;
+  padding: 0 2px; 
+  /* text-shadow: 2px 2px 0 #FFF, -2px -2px 0 #FFF, -2px 2px 0 #FFF, 2px -2px 0 #FFF; White Border Effect */
+}
+
+.site-sub-title {
+  font-family: 'Fredoka', 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--main-color2);
+  margin-top: 2px;
+  text-align: left;
+}
 /* mobile nav css start*/
 .mobile-nav {
   transform: translateX(-100%);

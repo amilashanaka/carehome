@@ -1,16 +1,33 @@
+<?php
+// Fetch site main name (f1) and sub name (f2) from backend
+$siteMainName = $setting->getSettings('f1');
+$siteSubName = $setting->getSettings('f2');
+
+// Define colors for each letter
+$letterColors = ['#00C1FF', '#00A650', '#FFD700', '#FF4500', '#FF1493', '#008080', '#FF0000', '#9932CC', '#FFA500', '#32CD32'];
+$letters = mb_str_split($siteMainName); // Split into an array of letters
+?>
 <!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold site-main-name-font sticky-top"
-  style="background-color: #ffffff; color: #ff5722; z-index: 1030;">
+  style="background-color: #ffffff; color: #ff5722; ">
   <div class="container-fluid">
     <button id="menu-toggle" class="btn btn-outline-primary d-lg-none">
       <i class="fas fa-bars"></i>
     </button>
     <a class="navbar-brand fw-bold align-items-center d-flex" href="#">
       <img src="assets/images/logo.png" alt="Logo" class="me-2 navbar-brand-img ps-2">
-      <span class="site-main-name-font fs-3 custom-font lh-1">
-        <div class="fs-3 site-main-name-font"><?= $setting->getSettings('f1')?></div>
-        <div class="fs-3 site-sub-name-color"><?= $setting->getSettings('f2')?></div>
-      </span>
+      <div class="site-title-wrapper">
+        <div class="site-title">
+          <?php foreach ($letters as $index => $letter) { ?>
+            <span style="color: <?= $letterColors[$index % count($letterColors)]; ?>;">
+              <?= htmlspecialchars($letter); ?>
+            </span>
+          <?php } ?>
+        </div>
+        <div class="site-sub-title"><?= htmlspecialchars($siteSubName) ?></div>
+      </div>
+
+
     </a>
 
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -63,7 +80,7 @@
 
 <!-- Mobile Navigation -->
 <!-- Overlay with Blur Effect -->
-<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50" ></div>
+<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
 
 <div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-75 ">
   <div class="d-flex justify-content-between align-items-center mb-4">
@@ -89,7 +106,8 @@
 
     <!-- Our Care Submenu -->
     <div>
-      <a class="nav-link site-main-name-font text-decoration-underline" href="#" data-bs-toggle="collapse" data-bs-target="#careSubmenu">
+      <a class="nav-link site-main-name-font text-decoration-underline" href="#" data-bs-toggle="collapse"
+        data-bs-target="#careSubmenu">
         <i class="bi bi-heart-pulse me-2"></i>OUR CARE
       </a>
       <div id="careSubmenu" class="collapse ps-3">
@@ -110,7 +128,8 @@
 
     <!-- Our People Submenu -->
     <div>
-      <a class="nav-link site-main-name-font text-decoration-underline" href="#" data-bs-toggle="collapse" data-bs-target="#peopleSubmenu">
+      <a class="nav-link site-main-name-font text-decoration-underline" href="#" data-bs-toggle="collapse"
+        data-bs-target="#peopleSubmenu">
         <i class="bi bi-people me-2"></i>OUR PEOPLE
       </a>
       <div id="peopleSubmenu" class="collapse ps-3">
@@ -130,22 +149,22 @@
 
   <!-- Social Media Icons -->
   <div class="social-icons mt-3 mb-4">
-    <a href="<?= $setting->getSettings('f8')?>" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-    <a href="<?= $setting->getSettings('f7')?>" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-    <a href="<?= $setting->getSettings('f9')?>" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    <a href="<?= $setting->getSettings('f8') ?>" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="<?= $setting->getSettings('f7') ?>" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a href="<?= $setting->getSettings('f9') ?>" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
   </div>
 
   <!-- Contact Information -->
   <div class="d-flex mb-4">
     <i class="bi bi-geo-alt site-main-name-font me-2"></i>
-    <p class="mb-0"><?= $setting->getSettings('f6')?></p> 
+    <p class="mb-0"><?= $setting->getSettings('f6') ?></p>
   </div>
   <div class="d-flex mb-4">
     <i class="bi bi-envelope-open site-main-name-font me-2"></i>
-    <p class="mb-0"><?= $setting->getSettings('f5')?></p>  
+    <p class="mb-0"><?= $setting->getSettings('f5') ?></p>
   </div>
   <div class="d-flex mb-4">
     <i class="bi bi-telephone site-main-name-font me-2"></i>
-    <p class="mb-0"><?= $setting->getSettings('f4')?></p>
+    <p class="mb-0"><?= $setting->getSettings('f4') ?></p>
   </div>
 </div>
