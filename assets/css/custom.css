@@ -4,36 +4,53 @@
   ;
   --social-media-strip: rgb(17, 146, 238)
 }
+
 /* main nav */
 .site-title-wrapper {
   display: inline-block;
   text-align: left;
 }
 
+.nav-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 .site-title {
   display: inline-flex;
-  font-family: 'Fredoka', 'Poppins', sans-serif; 
-  font-size: 32px;
+  font-family: 'Fredoka', 'Poppins', sans-serif;
+  font-size: 40px;
   font-weight: 900;
   letter-spacing: -2px;
   text-transform: uppercase;
 }
 
+.text-shadow-white {
+  text-shadow: 2px 2px 0 #FFFFFF,
+    -2px -2px 0 #FFFFFF,
+    -2px 2px 0 #FFFFFF,
+    2px -2px 0 #FFFFFF;
+}
+
+.text-border-white {
+  -webkit-text-stroke: 1px white;
+}
+
 .site-title span {
   display: inline-block;
   line-height: 1;
-  padding: 0 2px; 
+  padding: 0 2px;
   /* text-shadow: 2px 2px 0 #FFF, -2px -2px 0 #FFF, -2px 2px 0 #FFF, 2px -2px 0 #FFF; White Border Effect */
 }
 
 .site-sub-title {
   font-family: 'Fredoka', 'Poppins', sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--main-color2);
-  margin-top: 2px;
+  font-size: 35px;
+  font-weight: 900;
+  color: #243D8F;
   text-align: left;
 }
+
 /* mobile nav css start*/
 .mobile-nav {
   transform: translateX(-100%);
@@ -44,6 +61,7 @@
 .mobile-nav.active {
   transform: translateX(0);
   display: block;
+  
 }
 
 .social-icons a {
@@ -79,22 +97,41 @@
 
 #overlay.active {
   display: block;
+  opacity: 50%;
 }
+
 #menu {
-  transform: translateX(-100%); /* Hidden off-screen */
+  transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
-  z-index: 999; /* Above overlay */
+  z-index: 999;
 }
 
-/* When #menu is targeted (opened via <a href="#menu">), show it */
+
 #menu:target {
-  transform: translateX(0); /* Slide into view */
+  transform: translateX(0);
 }
 
-/* Apply blur effect when #menu is open */
-#menu:target ~ #overlay {
+#menu:target~#overlay {
   opacity: 1;
   visibility: visible;
+}
+@media (max-width: 768px) {
+  .site-title-wrapper {
+    justify-content: flex-start;
+  }
+
+  .site-title {
+      font-size: 20px !important; /* Adjust the font size */
+  }
+
+  .site-sub-title {
+      font-size: 14px !important; /* Make the subtitle smaller */
+  }
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 
@@ -131,6 +168,7 @@
 .sub-menu {
   background-color: #efcaf7;
 }
+
 .main-bg {
   background-color: var(--main-color1);
 }
@@ -213,6 +251,7 @@
   /* Rounded edges */
   padding: 10px 20px;
 }
+
 .custom-btn:hover {
   background-color: var(--main-color1);
 }
@@ -261,13 +300,19 @@
   width: 40px;
   height: 40px;
 }
+
 /* news cards */
 .card-img-top {
-  width: 100%; /* Ensures the image stretches to fit the card width */
-  height: 200px; /* Set a fixed height */
-  object-fit: cover; /* Ensures the image fills the area without distortion */
-  border-radius: 8px; /* Optional: adds rounded corners */
+  width: 100%;
+  /* Ensures the image stretches to fit the card width */
+  height: 200px;
+  /* Set a fixed height */
+  object-fit: cover;
+  /* Ensures the image fills the area without distortion */
+  border-radius: 8px;
+  /* Optional: adds rounded corners */
 }
+
 /* event table */
 .event-table {
   background-image: url('../images/tableB.png');
@@ -359,54 +404,71 @@ td {
   background-color: rgb(143, 240, 143);
   color: #000;
 }
+
 /* ourHome page css */
 .care-home-card {
   text-align: center;
   padding: 20px;
 }
+
 .care-home-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
+
 .care-home-card h5 {
   margin-top: 15px;
   font-weight: bold;
-  color:var(--main-color1);
+  color: var(--main-color1);
 }
+
 .care-home-card p {
-  color:var(--main-color2);
+  color: var(--main-color2);
   margin-bottom: 10px;
 }
 
 /* news page css */
 .card-link {
-  text-decoration: none !important;  /* No underline at any time */
-  color: #6c2eb9;  /* Default text color */
-  font-weight: bold;  /* Optional: makes title bold */
+  text-decoration: none !important;
+  /* No underline at any time */
+  color: #6c2eb9;
+  /* Default text color */
+  font-weight: bold;
+  /* Optional: makes title bold */
   transition: color 0.3s ease-in-out;
 }
 
 .card-link:hover {
-  color: #9a42d0;  /* Slightly lighter shade on hover */
-  text-decoration: none !important;  /* Ensures underline never appears */
+  color: #9a42d0;
+  /* Slightly lighter shade on hover */
+  text-decoration: none !important;
+  /* Ensures underline never appears */
 }
+
 /* pagination */
 .page-link {
-  width: 45px; /* Circle size */
+  width: 45px;
+  /* Circle size */
   height: 45px;
   display: flex;
-  align-items: center;  /* Vertically center */
-  justify-content: center;  /* Horizontally center */
+  align-items: center;
+  /* Vertically center */
+  justify-content: center;
+  /* Horizontally center */
   text-align: center;
-  border-radius: 50% !important;  /* Perfect circle */
-  margin: 0 10px; /* Spacing between buttons */
+  border-radius: 50% !important;
+  /* Perfect circle */
+  margin: 0 10px;
+  /* Spacing between buttons */
   color: #6c2eb9;
   font-weight: bold;
-  font-size: 18px; /* Bigger number */
+  font-size: 18px;
+  /* Bigger number */
   transition: background-color 0.3s, color 0.3s;
-  border: 2px solid #6c2eb9; /* Optional: Clean border */
+  border: 2px solid #6c2eb9;
+  /* Optional: Clean border */
 }
 
 .page-link:hover {
@@ -418,10 +480,12 @@ td {
   background-color: #6c2eb9;
   color: white;
 }
+
 /* our care tab */
-.care-heading{
-  background-color:rgb(244, 216, 250);
+.care-heading {
+  background-color: rgb(244, 216, 250);
 }
+
 .ourcare-para {
   background-color: rgb(217, 247, 217);
   color: #7a7979;

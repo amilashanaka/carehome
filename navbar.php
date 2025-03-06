@@ -8,7 +8,7 @@ $letterColors = ['#00C1FF', '#00A650', '#FFD700', '#FF4500', '#FF1493', '#008080
 $letters = mb_str_split($siteMainName); // Split into an array of letters
 ?>
 <!-- Main Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold site-main-name-font sticky-top"
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm fw-bold site-main-name-font sticky-top nav-padding"
   style="background-color: #ffffff; color: #ff5722; ">
   <div class="container-fluid">
     <button id="menu-toggle" class="btn btn-outline-primary d-lg-none">
@@ -16,15 +16,15 @@ $letters = mb_str_split($siteMainName); // Split into an array of letters
     </button>
     <a class="navbar-brand fw-bold align-items-center d-flex" href="#">
       
-      <div class="site-title-wrapper border p-2 border-2 bg-info">
+      <div class="site-title-wrapper border p-2 border-2 mt-0 mb-0" style="background: linear-gradient(to right, #879CC0, #ADB2CD);">
         <div class="site-title">
           <?php foreach ($letters as $index => $letter) { ?>
-            <span class="text-shadow" style="color: <?= $letterColors[$index % count($letterColors)]; ?>;">
+            <span class="text-shadow-white" style="color: <?= $letterColors[$index % count($letterColors)]; ?>;">
               <?= htmlspecialchars($letter); ?>
             </span>
           <?php } ?>
         </div>
-        <div class="site-sub-title"><?= htmlspecialchars($siteSubName) ?></div>
+        <div class="site-sub-title text-border-white "><?= htmlspecialchars($siteSubName) ?></div>
       </div>
 
 
@@ -80,7 +80,7 @@ $letters = mb_str_split($siteMainName); // Split into an array of letters
 
 <!-- Mobile Navigation -->
 <!-- Overlay with Blur Effect -->
-<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+<div id="overlay" class="position-fixed top-0 start-0 w-100 h-100 bg-dark "></div>
 
 <div id="mobile-nav" class="mobile-nav position-fixed top-0 start-0 h-100 bg-white shadow-lg p-4 w-75 ">
   <div class="d-flex justify-content-between align-items-center mb-4">
