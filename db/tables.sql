@@ -533,6 +533,92 @@ CREATE TABLE news (
     status int NULL DEFAULT 0,
     PRIMARY KEY (id) USING BTREE
 );
+INSERT INTO
+    news (
+        id,
+        f1,           -- News title (e.g., Elder Care Home - New Beginnings)
+        f2,           -- Some kind of subtitle or description
+        f3,           -- Additional info like category or topic
+        f4,           -- Another field for additional categorization or description
+        f5,           -- Main content (news article or information)
+        img1,         -- Image (URL or file path)
+        created_by,   -- User who created the entry
+        created_date, -- Date the entry was created
+        updated_by,   -- User who last updated the entry
+        updated_date, -- Date of the last update
+        status        -- Status of the news (active, inactive)
+    )
+VALUES
+    (
+        1,
+        'New Beginnings - Elder Care Home Opening',
+        'A new chapter begins with compassionate care',
+        'Elder Care Home',
+        'Opening Ceremony',
+        'We are excited to announce the grand opening of New Beginnings Elder Care Home. This home will provide high-quality care for the elderly, offering a comfortable and safe environment. With state-of-the-art facilities and a dedicated team, we aim to create a nurturing and supportive space for all residents.',
+        'assets/images/1.jpg',
+        1,
+        '2024-03-01 09:00:00',
+        1,
+        '2024-03-01 09:00:00',
+        1
+    ),
+    (
+        2,
+        'February 2024 - Elder Care Home News',
+        'Keeping our elderly residents comfortable and safe',
+        'Monthly Update',
+        'Health & Wellness',
+        'In our February update, we highlight the steps we have taken to ensure the safety and well-being of our residents. From introducing new health protocols to enhancing our facilities, we are committed to providing the best care possible.',
+        'assets/images/2.jpg', 
+        1,
+        '2024-02-28 10:15:59',
+        1,
+        '2024-02-28 10:15:59',
+        1
+    ),
+    (
+        3,
+        'March 2024 - Our Residents Celebrate Together',
+        'Community spirit at New Beginnings Elder Care Home',
+        'Elder Care Events',
+        'Resident Activities',
+        'The residents of New Beginnings Elder Care Home came together to celebrate the arrival of spring with a beautiful community event. Our activities team organized various fun and engaging events, ensuring that everyone felt a part of the family.',
+        'assets/images/3.jpg',
+        1,
+        '2024-03-10 11:25:00',
+        1,
+        '2024-03-10 11:25:00',
+        1
+    ),
+    (
+        4,
+        'New Beginnings: A Focus on Dementia Care',
+        'Specialized services for residents with dementia',
+        'Care Services',
+        'Dementia Care',
+        'New Beginnings Elder Care Home is proud to offer specialized dementia care services. Our trained staff are equipped to provide tailored care for residents suffering from dementia, ensuring that they live comfortably and with dignity.',
+        'assets/images/4.jpg',
+        1,
+        '2024-03-12 14:45:00',
+        1,
+        '2024-03-12 14:45:00',
+        1
+    ),
+    (
+        5,
+        'April 2024 - Spring Health Tips for Seniors',
+        'Ensuring our elderly residents stay healthy during spring',
+        'Health & Wellness',
+        'Spring Care Tips',
+        'As spring arrives, we focus on tips for elderly health, including keeping warm, hydration, and maintaining a healthy diet. Our expert team provides residents with regular checkups and personalized health guidance.',
+        'assets/images/5.jpg',  
+        1,
+        '2024-04-01 08:30:00',
+        1,
+        '2024-04-01 08:30:00',
+        1
+    );
 
 DROP TABLE IF EXISTS faq;
 
