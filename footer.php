@@ -8,7 +8,7 @@
       <div class="col-lg-3 col-md-3 col-6">
         <div class="logo">
           <img src="assets/images/logo.png" alt="Logo">
-          <span>NB CARE</span>
+   
         </div>
         <p class="mt-3">Copyright 2025 EtronicsSolutions<br>All Rights Reserved</p>
         <div class="social-icons mt-3">
