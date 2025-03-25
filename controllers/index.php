@@ -31,6 +31,7 @@ $about = new AboutController($database);
 $news = new NewsController($database);
 $faq = new FaqController($database);
 $gallery = new GalleryController($database);
+$slide = new SlideController($database);
 
 // Event Management
 $event = new EventController($database);  // Event management added

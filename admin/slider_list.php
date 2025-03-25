@@ -1,7 +1,23 @@
 <?php
-include_once './header.php';
+// Add this at the top of your PHP script.
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-$list = $product->get_all()['data'];
+include_once './header.php';
+include_once '../controllers/index.php';
+
+$form_config = [
+    'heading' => 'Slide List',
+    'title' => 'list',
+    'new' => 'slide',
+    'table' => ['th' => ['Title','Image','Action']],
+    'db_table' => 'slides',
+    'redirect' => 'slide_list',
+];
+
+$list = $slide->get_all_with_delete()['error'] === null ? $slide->get_all_with_delete()['data'] : null;
+
+
 ?>
 
 <?php include_once './navbar.php'; ?>
@@ -12,10 +28,9 @@ $list = $product->get_all()['data'];
     <!-- Content Header (Page header) -->
 
     <?php
-     $heading = 'Slider';
-    $page_title = 'List';
-
-    include_once './page_header.php';
+        $heading = $form_config['heading'];
+        $page_title = $form_config['title'];
+        include_once './page_header.php';
     ?>
     <!-- Main content -->
     <section class="content">
@@ -26,53 +41,53 @@ $list = $product->get_all()['data'];
                     <?php if ($_SESSION['role'] < 3) { ?>
                         <div class="card-header">
                             <h3 class="card-title">
-                                <div class="row">
-                                    <div class="col6">
-                                        <button type="button" class="btn btn-app" onclick="location.href = 'product'"><i class="fas fa-file"></i>New Product</button>
-                                    </div>
-                                </div>
+                            <button type="button" class="btn btn-app" onclick="location.href ='<?= $form_config['new'] ?>'">
+                                    <i class="fas fa-file"></i>Add New
+                                </button>
                             </h3>
                         </div>
                     <?php } ?>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                    <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th><?= $sys['prod-f1'] ?></th>
-                                    <th>Created Date</th>
-
-
-                                    <th style="width:3%; text-align: center;">Action</th>
+                                    <?php foreach ($form_config['table']['th'] as $header) {
+                                        echo $header === 'Action' ? '<th style="width:3%; text-align: center;">' . $header . '</th>' : '<th>' . $header . '</th>';
+                                    } ?>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th>#</th>
-                                    <th><?= $sys['prod-f1'] ?></th>
-                                    <th>Created Date</th>
-
-
-                                    <th style="width:3%; text-align: center;">Action</th>
+                                    <?php foreach ($form_config['table']['th'] as $header) {
+                                        echo $header === 'Action' ? '<th style="width:3%; text-align: center;">' . $header . '</th>' : '<th>' . $header . '</th>';
+                                    } ?>
                                 </tr>
                             </tfoot>
                             <tbody>
-                                <?php
-                                $i = 1;
-                                if ($list != null) {
-                                    foreach ($list as $row) {
-                                ?>
+                                <?php if ($list) {
+                                    $i = 1;
+                                    foreach ($list as $row) { ?>
                                         <tr>
                                             <td><?= $i++; ?></td>
-                                            <td><a href="product?id=<?= base64_encode($row['id']); ?>"><?= $row['f1'] ?></a></td>
-
-                                            <td><?= printTime($row['created_date']); ?></td>
-
-                                            <td> <?php if ($row['status'] == '1') { ?><button type="button" id="btnm<?php echo $row['id']; ?>" class="btn btn-block btn-outline-danger btn-flat" onclick="delete_record('<?php echo $row['id']; ?>', 'product', 'id', 'blog_list');"><i class="fa fa-times" aria-hidden="true"></i></button> <?php } else { ?> <button type="button" id="btnm<?php echo $row['id']; ?>" class="btn btn-block btn-outline-success btn-flat" onclick="activate_record('<?php echo $row['id']; ?>', 'blogs', 'id', 'blog_list');"><i class="fa fa-check "></i></button> <?php } ?> </td>
+                                            <td><a href="<?= $form_config['new'] ?>?id=<?= base64_encode($row['id']); ?>"><?= $row['f1'] ?></a></td>
+                                            <td><img src="<?= "../". $row['img1'] ?>" style="max-height: 100px;"> </td>
+         
+                                            <td>
+                                                <?php if ($row['status'] == '1') { ?>
+                                                    <button type="button" class="btn btn-block btn-outline-danger btn-flat" onclick="delete_record('<?= $row['id']; ?>', '<?= $form_config['db_table']; ?>', 'id', '<?= $form_config['redirect']; ?>');">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                <?php } else { ?>
+                                                    <button type="button" class="btn btn-block btn-outline-success btn-flat" onclick="activate_record('<?= $row['id']; ?>', '<?= $form_config['db_table']; ?>', 'id', '<?= $form_config['redirect']; ?>');">
+                                                        <i class="fa fa-check"></i>
+                                                    </button>
+                                                <?php } ?>
+                                            </td>
                                         </tr>
-                                <?php }
-                                } ?>
+                                <?php } } ?>
                             </tbody>
                         </table>
                     </div>

@@ -1,4 +1,4 @@
--- Active: 1738839059223@@127.0.0.1@3306@crhm
+-- Active: 1717229315063@@127.0.0.1@3306@crhm
 
 --  create DATABASE crhm;
 use crhm;
@@ -695,3 +695,25 @@ CREATE TABLE gallery (
     status int DEFAULT 0,
     PRIMARY KEY (id) USING BTREE
 );
+
+CREATE TABLE slides (
+    id int NOT NULL AUTO_INCREMENT,
+    f1 varchar(255)  DEFAULT NULL,
+    f2 varchar(255)  DEFAULT NULL,
+    f3 varchar(255)  DEFAULT NULL,
+    f4 varchar(255)  DEFAULT NULL,
+    f5 longtext DEFAULT NULL,
+    img1 varchar(255)  DEFAULT NULL,
+    created_by int NULL DEFAULT NULL,
+    created_date datetime(0) NULL DEFAULT CURRENT_TIMESTAMP(0),
+    updated_by int NULL DEFAULT NULL,
+    updated_date datetime(0) NULL DEFAULT CURRENT_TIMESTAMP(0) ON UPDATE CURRENT_TIMESTAMP(0),
+    status int NULL DEFAULT 0,
+    PRIMARY KEY (id) USING BTREE
+) ;
+
+INSERT INTO slides (f1,img1,status) VALUES
+('singapore','./uploads/sliders/17383136017679.jpg',1),
+('uk','./uploads/sliders/17383136524571.jpg',1),
+('germany','./uploads/sliders/17383136687460.jpg',1),
+('finland','./uploads/sliders/17383136814185.jpg',1);

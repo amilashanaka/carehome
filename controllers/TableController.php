@@ -625,4 +625,35 @@ class TableController
     }
 
 
+    
+    public function get_all_with_delete(): array
+    {
+        $result = array(
+            'data' => [],
+            'error' => null,
+        );
+
+
+        try {
+            $query = "SELECT * FROM $this->table ";
+
+            $stmt = $this->conn->prepare($query);
+            $stmt->execute();
+
+            $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            if ($data) {
+                $result['data'] = $data;
+                $result['error'] = null;
+            } else {
+                $result['error'] = "No data found";
+            }
+        } catch (PDOException $e) {
+            $result['error'] = $e->getMessage();
+        }
+ 
+        return $result;
+    }
+
+
 }
