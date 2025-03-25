@@ -12,7 +12,7 @@ $list = $product->get_all()['data'];
     <!-- Content Header (Page header) -->
 
     <?php
-     $heading = 'Products';
+     $heading = 'Slider';
     $page_title = 'List';
 
     include_once './page_header.php';
